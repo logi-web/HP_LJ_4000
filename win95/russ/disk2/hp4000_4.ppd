@@ -1,0 +1,943 @@
+*PPD-Adobe: "4.3"
+*% =========================================
+*% Disclaimer:  The above statement indicates
+*% that this PPD was written using the Adobe PPD
+*% File Format Specification 4.3, but does not 
+*% intend to imply approval and acceptance by
+*% Adobe Systems, Inc. 
+*% =========================================
+*% Copyright 1992-97 Hewlett-Packard Company
+*% PPD for HP LaserJet 4000
+*% For Windows 95 only 
+*% August 8, 1997
+*% Release Candidate 1
+*% =========================================
+
+*% Version 0.92
+*% 1.  Updated query code from Mac PPDs.
+*% 2.  Copied Adobe disclaimer from Mac PPDs.
+*% 3.  Changed throughput back to 17.
+*% 4.  Added more Installed Memory options.
+*% 5.  Updated JCLEnd code.
+*% 6.  Updated font version numbers for Bookman fonts.
+
+*% Version 0.94 (skipped 0.93 to synch up with Win3.1)
+*% 1.  Updated Memory and FreeVM numbers from NT PPDs.
+*% 2.  Updated Halftone code from NT PPDs.
+
+*% Version 0.95 
+*% 1.  Added DeferredMediaSelection true to custom page size code.
+
+*%=== PPD File Version Information =========
+*FileVersion: "0.95"
+*FormatVersion: "4.3"
+*LanguageEncoding: Cyrillic
+*LanguageVersion: RUSSIAN
+*PCFileName: "HP4000_4.PPD"
+
+*%=== Product Information ==================
+*ModelName: "HP LaserJet 4000 Series"
+*ShortNickName: "HP LaserJet 4000 Series PS"
+*NickName: "HP LaserJet 4000 Series PS"
+*Product: "(HP LaserJet 4000 Series)"
+*Manufacturer: "HP"
+*PSVersion: "(2014.108) 1"
+
+*%=== Device Capabilities ==================
+*ColorDevice: False
+*DefaultColorSpace: Gray
+*FileSystem: True
+*?FileSystem: "
+  save false
+   (%disk?%)
+   { currentdevparams dup /Writeable known
+      { /Writeable get {pop true} if }  { pop } ifelse
+    } 100 string /IODevice resourceforall
+    {(True)}{(False)} ifelse = flush
+ restore
+"
+*End
+
+*LanguageLevel: "2"
+*Throughput: "17"
+*TTRasterizer: Type42
+*?TTRasterizer: "
+   save
+        42 /FontType resourcestatus
+        { pop pop (Type42)} {pop pop (None)} ifelse = flush
+   restore
+"
+*End
+
+*Protocols: PJL TBCP
+*VariablePaperSize: True
+
+*SuggestedJobTimeout: "0"
+*SuggestedWaitTimeout: "120"
+*PrintPSErrors: True
+
+*% This is added to fix Pagemaker and Quark Xpress bugs.
+*DefaultResolution: 600x600dpi
+
+*%=== JCL Features ==========================
+*JCLBegin: "<1B>%-12345X@PJL JOB<0A>"
+*JCLToPSInterpreter: "@PJL ENTER LANGUAGE = POSTSCRIPT <0A>"
+*JCLEnd: "<1B>%-12345X@PJL EOJ<0A>"
+
+*JCLOpenUI *JCLResolution/<d0><e0><e7><f0><e5><f8><e5><ed><e8><e5>: PickOne
+*OrderDependency: 10 JCLSetup *JCLResolution
+*DefaultJCLResolution: 600x600dpi
+*JCLResolution 300x300dpi/300 <f2><ee><f7><e5><ea>/<e4><fe><e9><ec>: "@PJL SET RESOLUTION = 300<0A>"
+*JCLResolution 600x600dpi/600 <f2><ee><f7><e5><ea>/<e4><fe><e9><ec>: "@PJL SET RESOLUTION = 600<0A>"
+*JCLResolution 1200x1200dpi/ProRes 1200: "@PJL SET RESOLUTION = 1200<0A>"
+*JCLCloseUI: *JCLResolution
+
+*JCLOpenUI *JCLEconomode/EconoMode: PickOne
+*OrderDependency: 10 JCLSetup *JCLEconomode
+*DefaultJCLEconomode: PrinterDefault
+*JCLEconomode PrinterDefault/<d2><e5><ea><f3><f9><e5><e5> <e7><ed><e0><f7><e5><ed><e8><e5> <e2> <ef><f0><e8><JCLEconomode Off: ""
+*JCLEconomode Off/<ce><ef><f2><e8><ec><e0><eb><fc><ed><ee><e5> <ea><e0><f7><e5><f1><f2><e2><ee>: "@PJL SET ECONOMODE = OFF<0A>"
+*JCLEconomode On/<dd><ea><ee><ed><ee><ec><e8><ff> <f2><ee><ed><e5><f0><e0>: "@PJL SET ECONOMODE = ON<0A>"
+*JCLCloseUI: *JCLEconomode
+
+*%=== Installable Options ==========================
+*OpenGroup: InstallableOptions/<d3><f1><f2><e0><ed><ee><e2><eb><e5><ed><ee>
+
+*OpenUI *Option1/<cb><ee><f2><ee><ea> 3: Boolean
+*DefaultOption1: False
+*Option1 True/<d3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*Option1 False/<cd><e5> <f3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*?Option1: "
+   save
+        currentpagedevice /InputAttributes get dup
+        1 known
+        {1 get null ne {(True)}{(False)} ifelse}
+        {pop (False)} ifelse = flush
+   restore "
+*End
+*CloseUI: *Option1
+
+*OpenUI *Option2/<cb><ee><f2><ee><ea> 4: Boolean
+*DefaultOption2: False
+*Option2 True/<d3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*Option2 False/<cd><e5> <f3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*?Option2: "
+   save
+        currentpagedevice /InputAttributes get dup
+        4 known
+        {4 get null ne {(True)}{(False)} ifelse}
+        {pop (False)} ifelse
+        = flush
+   restore "
+*End
+*CloseUI: *Option2
+
+*OpenUI *Option3/<cc><ee><e4><f3><eb><fc> <e4><e2><f3><f1><f2><ee><f0>. <ef><e5><f7><e0><f2><e8>: Boolean
+*DefaultOption3: False
+*Option3 True/<d3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*Option3 False/<cd><e5> <f3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*?Option3: "
+   save
+        currentpagedevice /Duplex known
+        {(True)}{(False)}ifelse = flush
+   restore "
+*End
+*CloseUI: *Option3
+
+*OpenUI *Option4/<c6><e5><f1><f2><ea><e8><e9> <e4><e8><f1><ea> <ef><f0><e8><ed><f2><e5><f0><e0>: Boolean
+*DefaultOption4: False
+*Option4 True/<d3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*Option4 False/<cd><e5> <f3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*?Option4: "
+  save 
+    false
+   (%disk?%)
+   { currentdevparams dup /Writeable known
+      { /Writeable get {pop true} if }  { pop } ifelse
+    } 100 string /IODevice resourceforall
+    {(True)}{(False)} ifelse = flush
+ restore
+"
+*End
+*CloseUI: *Option4
+
+*OpenUI *Option5/<cf><e8><f2><e0><f2><e5><eb><fc> <ea><ee><ed><e2><e5><f0><f2><ee><e2>: Boolean
+*DefaultOption5: False
+*Option5 True/<d3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*Option5 False/<cd><e5> <f3><f1><f2><e0><ed><ee><e2><eb><e5><ed>: ""
+*?Option5: "
+   save
+        currentpagedevice /InputAttributes get
+        2 get 
+        null ne {(True)}{(False)} ifelse = flush
+   restore
+"
+*End 
+*CloseUI: *Option5
+
+*OpenUI *InstalledMemory/<ce><e1><f9><e0><ff> <ef><e0><ec><ff><f2><fc> <ef><f0><e8><ed><f2><e5><f0><e0>: PickOne
+*DefaultInstalledMemory: 4MB
+*InstalledMemory 4MB/4 - 7 <cc><e1><e0><e9><f2>: ""
+*InstalledMemory 8MB/8 - 11 <cc><e1><e0><e9><f2>: ""
+*InstalledMemory 12MB/12 - 19 <cc><e1><e0><e9><f2>: ""
+*InstalledMemory 20MB/20 - 27 <cc><e1><e0><e9><f2>: ""
+*InstalledMemory 28MB/28 - 35 <cc><e1><e0><e9><f2>: ""
+*InstalledMemory 36MB/36 <cc><e1><e0><e9><f2> <e8><eb><e8> <e1><ee><eb><e5><e5>: ""
+*?InstalledMemory: "
+  save
+    currentsystemparams /RamSize get 
+    524288 div ceiling cvi 2 div
+    /size exch def
+    size 36 ge 
+      {(36MB)} 
+       {size 28 ge 
+          {(28MB)}
+          {size 20 ge
+             {(20MB)}
+             {size 12 ge
+                {(12MB)}
+                {size 8 ge
+                   {(8MB)}
+                   {(4MB)} ifelse
+             } ifelse
+          } ifelse
+       } ifelse
+    } ifelse = flush
+  restore
+"
+*End
+*CloseUI: *InstalledMemory
+*CloseGroup: InstallableOptions
+
+*FreeVM: "2200000"
+*VMOption 4MB/4 - 7 <cc><e1><e0><e9><f2>: "2200000"
+*VMOption 8MB/8 - 11 <cc><e1><e0><e9><f2>: "6000000"
+*VMOption 12MB/12 - 19 <cc><e1><e0><e9><f2>: "9400000"
+*VMOption 20MB/20 - 27 <cc><e1><e0><e9><f2>: "17000000"
+*VMOption 28MB/28 - 35 <cc><e1><e0><e9><f2>: "24500000"
+*VMOption 36MB/36 <cc><e1><e0><e9><f2> <e8><eb><e8> <e1><ee><eb><e5><e5>: "32000000"
+
+*%=== UI Constraints =============================
+*% If A than not B
+*UIConstraints: *Option1 False *InputSlot Lower
+*UIConstraints: *Option2 False *InputSlot LargeCapacity
+*UIConstraints: *Option3 False *Duplex DuplexNoTumble
+*UIConstraints: *Option3 False *Duplex DuplexTumble
+*UIConstraints: *Option4 False *Collate True
+*UIConstraints: *Option5 False *InputSlot Envelope
+
+*UIConstraints: *JCLResolution 1200dpi *HPHalftone Standard
+
+*% Don't allow these paper sizes/types in the Envelope Feeder
+*UIConstraints: *PageSize Letter *InputSlot Envelope
+*UIConstraints: *PageSize Legal *InputSlot Envelope
+*UIConstraints: *PageSize Executive *InputSlot Envelope
+*UIConstraints: *PageSize A4 *InputSlot Envelope
+*UIConstraints: *PageSize A5 *InputSlot Envelope
+*UIConstraints: *PageSize B5 *InputSlot Envelope
+*UIConstraints: *MediaType Transparency *InputSlot Envelope
+
+*UIConstraints: *PageRegion Letter *InputSlot Envelope
+*UIConstraints: *PageRegion Legal *InputSlot Envelope
+*UIConstraints: *PageRegion Executive *InputSlot Envelope
+*UIConstraints: *PageRegion A4 *InputSlot Envelope
+*UIConstraints: *PageRegion A5 *InputSlot Envelope
+*UIConstraints: *PageRegion B5 *InputSlot Envelope
+
+*% Don't allow envelopes or transparencies in Tray 2
+*UIConstraints: *PageSize Env10 *InputSlot Middle
+*UIConstraints: *PageSize EnvMonarch *InputSlot Middle
+*UIConstraints: *PageSize EnvDL *InputSlot Middle
+*UIConstraints: *PageSize EnvC5 *InputSlot Middle
+*UIConstraints: *MediaType Transparency *InputSlot Middle
+
+*UIConstraints: *PageRegion Env10 *InputSlot Middle
+*UIConstraints: *PageRegion EnvMonarch *InputSlot Middle
+*UIConstraints: *PageRegion EnvDL *InputSlot Middle
+*UIConstraints: *PageRegion EnvC5 *InputSlot Middle
+
+*% Don't allow envelopes or transparencies in Tray 3
+*UIConstraints: *PageSize Env10 *InputSlot Lower
+*UIConstraints: *PageSize EnvMonarch *InputSlot Lower
+*UIConstraints: *PageSize EnvDL *InputSlot Lower
+*UIConstraints: *PageSize EnvC5 *InputSlot Lower
+*UIConstraints: *MediaType Transparency *InputSlot Lower
+
+*UIConstraints: *PageRegion Env10 *InputSlot Lower
+*UIConstraints: *PageRegion EnvMonarch *InputSlot Lower
+*UIConstraints: *PageRegion EnvDL *InputSlot Lower
+*UIConstraints: *PageRegion EnvC5 *InputSlot Lower
+
+*% Don't allow envelopes or transparencies in Tray 4
+*UIConstraints: *PageSize Env10 *InputSlot LargeCapacity
+*UIConstraints: *PageSize EnvMonarch *InputSlot LargeCapacity
+*UIConstraints: *PageSize EnvDL *InputSlot LargeCapacity
+*UIConstraints: *PageSize EnvC5 *InputSlot LargeCapacity
+*UIConstraints: *MediaType Transparency *InputSlot LargeCapacity
+
+*UIConstraints: *PageRegion Env10 *InputSlot LargeCapacity
+*UIConstraints: *PageRegion EnvMonarch *InputSlot LargeCapacity
+*UIConstraints: *PageRegion EnvDL *InputSlot LargeCapacity
+*UIConstraints: *PageRegion EnvC5 *InputSlot LargeCapacity
+
+*% Don't allow A5, envelopes, transparencies or labels to be duplexed
+*UIConstraints: *PageSize A5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Env10 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvMonarch *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvC5 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvISOB5 *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Labels *Duplex DuplexNoTumble
+
+*UIConstraints: *PageRegion A5 *Duplex DuplexNoTumble
+*UIConstraints: *PageRegion Env10 *Duplex DuplexNoTumble
+*UIConstraints: *PageRegion EnvMonarch *Duplex DuplexNoTumble
+*UIConstraints: *PageRegion EnvDL *Duplex DuplexNoTumble
+*UIConstraints: *PageRegion EnvC5 *Duplex DuplexNoTumble
+*UIConstraints: *PageRegion EnvISOB5 *Duplex DuplexNoTumble
+
+*UIConstraints: *PageSize A5 *Duplex DuplexTumble
+*UIConstraints: *PageSize Env10 *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvMonarch *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvC5 *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvISOB5 *Duplex DuplexTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *MediaType Labels *Duplex DuplexTumble
+
+*UIConstraints: *PageRegion A5 *Duplex DuplexTumble
+*UIConstraints: *PageRegion Env10 *Duplex DuplexTumble
+*UIConstraints: *PageRegion EnvMonarch *Duplex DuplexTumble
+*UIConstraints: *PageRegion EnvDL *Duplex DuplexTumble
+*UIConstraints: *PageRegion EnvC5 *Duplex DuplexTumble
+*UIConstraints: *PageRegion EnvISOB5 *Duplex DuplexTumble
+
+*% These don't work with the 4.0 driver.
+*% Duplicate UIConstraints are provided for backwards compatibility.
+*NonUIConstraints: *CustomPageSize True *Duplex DuplexNoTumble
+*NonUIConstraints: *CustomPageSize True *Duplex DuplexTumble
+*NonUIConstraints: *CustomPageSize True *InputSlot Envelope
+*UIConstraints: *CustomPageSize True *DuplexNoTumble
+*UIConstraints: *CustomPageSize True *DuplexTumble
+*UIConstraints: *CustomPageSize True *InputSlot Envelope
+
+*%=== Fit to Page ==========================
+*OpenUI *HPPaperPolicy/<c2> <f0><e0><e7><ec><e5><f0> <eb><e8><f1><f2><e0>: PickOne
+*OrderDependency: 10 AnySetup *HPPaperPolicy
+*DefaultHPPaperPolicy: PromptUser
+*HPPaperPolicy PromptUser/<cf><ee><e4><f1><ea><e0><e7><ea><e0> <ef><ee><eb><fc><e7><ee><e2><e0><f2><e5><ebHPPaperPolicy NearestSizeAdjust: "
+   <</DeferredMediaSelection true>> setpagedevice"
+*End
+*HPPaperPolicy NearestSizeAdjust/<c1><eb><e8><e6>. <f0><e0><e7><ec><e5><f0> <e8> <ec><e0><f1><f8><f2><e0><e1>: "
+   <</DeferredMediaSelection false
+     /Policies << /PageSize 3 >> >> setpagedevice"
+*End
+*HPPaperPolicy NearestSizeNoAdjust/<c1><eb><e8><e6>. <f0><e0><e7><ec><e5><f0> <e8> <ee><f2><f0><e5><e7><e0><f2><fc>DefaultPageSize: "
+   <</DeferredMediaSelection false
+     /Policies << /PageSize 5 >> >> setpagedevice"
+*End
+*CloseUI: *HPPaperPolicy
+
+*%=== Paper Sizes =================
+*OpenUI *PageSize: PickOne
+*OrderDependency: 30 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize Letter/Letter: "
+    <</PageSize [612 792] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize Legal/Legal: "
+    <</PageSize [612 1008] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize Executive/Executive: "
+    <</PageSize [522 756] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize A4/A4: "
+    <</PageSize [595 842] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize A5/A5: "
+    <</PageSize [420 595] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize B5/B5 (JIS): "
+    <</PageSize [516 729] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize Env10/Com-10: "
+    <</PageSize [297 684] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize EnvMonarch/<ca><ee><ed><e2><e5><f0><f2> Monarch: "
+    <</PageSize [279 540] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize EnvDL/DL: "
+    <</PageSize [312 624] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize EnvC5/C5: "
+    <</PageSize [459 649] /ImagingBBox null>> setpagedevice"
+*End
+*PageSize EnvISOB5/B5 (ISO): "
+    <</PageSize [499 709] /ImagingBBox null>> setpagedevice"
+*End
+*?PageSize: "
+   save
+   currentpagedevice /PageSize get aload pop
+   2 copy gt {exch} if 
+   (Unknown) 
+   11 dict
+   dup [499 709] (EnvISOB5) put
+   dup [312 624] (EnvDL) put
+   dup [459 649] (EnvC5) put
+   dup [279 540] (EnvMonarch) put
+   dup [297 684] (Env10) put
+   dup [516 729] (B5) put
+   dup [420 595] (A5) put
+   dup [595 842] (A4) put
+   dup [522 756] (Executive) put
+   dup [612 1008] (Legal) put
+   dup [612 792] (Letter) put
+{ exch aload pop 4 index sub abs 5 le exch 
+   5 index sub abs 5 le and 
+      {exch pop exit} {pop} ifelse
+   } bind forall
+   = flush pop pop
+   restore
+"
+*End
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 40 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion Letter/Letter: "
+    <</PageSize [612 792] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion Legal/Legal: "
+    <</PageSize [612 1008] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion Executive/Executive: "
+    <</PageSize [522 756] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion A4/A4: "
+    <</PageSize [595 842] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion A5/A5: "
+    <</PageSize [420 595] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion B5/B5 (JIS): "
+    <</PageSize [516 729] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion Env10/Com-10: "
+    <</PageSize [297 684] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion EnvMonarch/<ca><ee><ed><e2><e5><f0><f2> Monarch: "
+    <</PageSize [279 540] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion EnvDL/DL: "
+    <</PageSize [312 624] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion EnvC5/C5: "
+    <</PageSize [459 649] /ImagingBBox null>> setpagedevice"
+*End
+*PageRegion EnvISOB5/B5 (ISO): "
+    <</PageSize [499 709] /ImagingBBox null>> setpagedevice"
+*End
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*ImageableArea Letter/Letter: "12.24 12.06 599.76 780.06"
+*ImageableArea Legal/Legal: "12.24 12.06 599.76 996.06"
+*ImageableArea Executive/Executive: "13.32 12.06 508.68 744.06"
+*ImageableArea A4/A4: "13.44 12.06 581.76 829.74"
+*ImageableArea A5/A5: "12.00 12.00 408.00 583.00"
+*ImageableArea B5/B5 (JIS): "12.50 12.50 503.50 716.50"
+*ImageableArea Env10/Com-10: "12.12 12.06 284.76 672.06"
+*ImageableArea EnvMonarch/<ca><ee><ed><e2><e5><f0><f2> Monarch: "12.72 12.06 266.16 528.06"
+*ImageableArea EnvDL/DL: "13.80 12.06 297.96 611.58"
+*ImageableArea EnvC5/C5: "12.60 12.06 446.52 637.02"
+*ImageableArea EnvISOB5/B5 (ISO): "13.20 12.06 485.52 696.54"
+*?ImageableArea: "
+   save
+   /cvp { (                ) cvs print ( ) print } bind def
+   /upperright {10000 mul floor 10000 div} bind def
+   /lowerleft {10000 mul ceiling 10000 div} bind def
+   newpath clippath pathbbox
+   4 -2 roll exch 2 {lowerleft cvp} repeat
+   exch 2 {upperright cvp} repeat flush
+   restore
+"
+*End
+
+*DefaultPaperDimension: A4 
+*PaperDimension Letter/Letter: "612 792"
+*PaperDimension Legal/Legal: "612 1008"
+*PaperDimension Executive/Executive: "522 756"
+*PaperDimension A4/A4: "595 842"
+*PaperDimension A5/A5: "420 595"
+*PaperDimension B5/B5 (JIS): "516 729"
+*PaperDimension Env10/Com-10: "297 684"
+*PaperDimension EnvMonarch/<ca><ee><ed><e2><e5><f0><f2> Monarch: "279 540"
+*PaperDimension EnvDL/DL: "312 624"
+*PaperDimension EnvC5/C5: "459 649"
+*PaperDimension EnvISOB5/B5 (ISO): "499 709"
+
+*LandscapeOrientation: Plus90
+
+*%=== Media Type ===========================
+*OpenUI *MediaType/<d2><e8><ef> <ec><e0><f2><e5><f0><e8><e0><eb><e0>: PickOne
+*OrderDependency: 20 AnySetup *MediaType
+*DefaultMediaType: None
+*MediaType None/<cd><e5><f2>:  "
+    <</MediaType null>> setpagedevice"
+*End
+*MediaType Plain/<ce><e1><fb><f7><ed><e0><ff> <e1><f3><ec><e0><e3><e0>:  "
+    <</MediaType (Plain)>> setpagedevice"
+*End
+*MediaType Preprinted/<cf><f0><e5><e4><e2>. <f0><e0><f1><ef><e5><f7>. <f4><ee><f0><ec><e0>:  "
+    <</MediaType (Preprinted)>> setpagedevice"
+*End
+*MediaType Letterhead/<d4><e8><f0><ec><e5><ed><ed><fb><e9> <e1><eb><e0><ed><ea>:  "
+    <</MediaType (Letterhead)>> setpagedevice"
+*End
+*MediaType Transparency/<cf><f0><ee><e7><f0><e0><f7><ed><e0><ff> <ef><eb><e5><ed><ea><e0>:  "
+    <</MediaType (Transparency)>> setpagedevice"
+*End
+*MediaType Prepunched/<c1><f3><ec><e0><e3><e0> <f1> <ef><f0><ee><e1><e8><e2><ea><e0><ec><e8>:  "
+    <</MediaType (Prepunched)>> setpagedevice"
+*End
+*MediaType Labels/<cd><e0><ea><eb><e5><e9><ea><e8>:  "
+    <</MediaType (Labels)>> setpagedevice"
+*End
+*MediaType Bond/<c1><f3><ec><e0><e3><e0> <f2><e8><ef><e0> Bond:  "
+    <</MediaType (Bond)>> setpagedevice"
+*End
+*MediaType Recycled/<c1><f3><ec><e0><e3><e0> <e8><e7> <e2><f2><ee><f0>. <f1><fb><f0><fc><ff>:  "
+    <</MediaType (Recycled)>> setpagedevice"
+*End
+*MediaType Color/<d6><e2><e5><f2>:  "
+    <</MediaType (Color)>> setpagedevice"
+*End
+*MediaType Cardstock/<ca><e0><f0><f2><ee><f7><ea><e8>:  "
+    <</MediaType (Card Stock)>> setpagedevice"
+*End
+*MediaType Rough/<c3><f0><f3><e1><e0><ff> <e1><f3><ec><e0><e3><e0>:  "
+    <</MediaType (Rough)>> setpagedevice"
+*End
+*?MediaType: "
+   save
+    currentpagedevice /InputAttributes get dup
+    /Priority get
+    0 get get
+    /MediaType get
+    (Rough) anchorsearch
+      {pop pop (Rough)} if  
+    = flush
+   restore
+"
+*End
+*CloseUI: *MediaType
+
+*%=== Custom Paper Support =================
+*%Orientation and Margin (offsets) values are not utilized
+
+*MaxMediaWidth: "612"
+*MaxMediaHeight: "1008"
+*HWMargins: 16 16 16 16
+*CustomPageSize True: "
+        pop pop pop 
+        <</DeferredMediaSelection true /PageSize [ 7 -2 roll ]
+        /ImagingBBox null >>
+        setpagedevice
+"
+*End
+
+*ParamCustomPageSize Width: 1 points 216 612
+*ParamCustomPageSize Height: 2 points 360 1008
+*ParamCustomPageSize WidthOffset: 3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation: 5 int 0 0
+
+*RequiresPageRegion All: True
+
+*%=== Paper Sources ====================
+*OpenUI *InputSlot: PickOne
+*OrderDependency: 20 AnySetup *InputSlot
+*DefaultInputSlot: Middle
+*InputSlot Upper/<cb><ee><f2><ee><ea> 1: "
+    <</ManualFeed false /MediaPosition 3>> setpagedevice"
+*End
+*InputSlot ManualFeed/<cb><ee><f2><ee><ea> 1 (<e2><f0><f3><f7><ed><f3><fe>): "
+    <</ManualFeed true>> setpagedevice"
+*End
+*InputSlot Middle/<cb><ee><f2><ee><ea> 2: "
+    <</ManualFeed false /MediaPosition 0>> setpagedevice"
+*End
+*InputSlot Lower/<cb><ee><f2><ee><ea> 3: "
+    <</ManualFeed false /MediaPosition 1>> setpagedevice"
+*End
+*InputSlot LargeCapacity/<cb><ee><f2><ee><ea> 4: "
+    <</ManualFeed false /MediaPosition 4>> setpagedevice"
+*End
+*InputSlot Envelope/<cf><e8><f2><e0><f2><e5><eb><fc> <ea><ee><ed><e2><e5><f0><f2><ee><e2>: "
+    <</ManualFeed false /MediaPosition 2>> setpagedevice"
+*End
+*?InputSlot: "
+   save
+      currentpagedevice /InputAttributes get /Priority get
+      aload pop pop pop pop
+      [(Middle) (Lower) (Envelope) (Upper) (LargeCapacity)] exch get = flush
+   restore
+"
+*End
+*CloseUI: *InputSlot
+
+*%=== Halftone Information =================
+*ScreenFreq: "85.0"
+*ScreenAngle: "45.0"
+
+*ResScreenFreq 300x300dpi/300 <f2><ee><f7><e5><ea>/<e4><fe><e9><ec>: "60.0"
+*ResScreenAngle 300x300dpi/300 <f2><ee><f7><e5><ea>/<e4><fe><e9><ec>: "45.0"
+*ResScreenFreq 600x600dpi/600 <f2><ee><f7><e5><ea>/<e4><fe><e9><ec>: "85.0"
+*ResScreenAngle 600x600dpi/600 <f2><ee><f7><e5><ea>/<e4><fe><e9><ec>: "45.0"
+
+*DefaultHalftoneType:    9
+*AccurateScreensSupport: False
+
+*OpenUI *HPHalftone/<c3><f0><e0><e4><e0><f6><e8><e8> <f1><e5><f0><ee><e3><ee>: PickOne
+*OrderDependency: 10 DocumentSetup *HPHalftone
+*DefaultHPHalftone: PrinterDefault
+*HPHalftone PrinterDefault/<d2><e5><ea><f3><f9><e5><e5> <e7><ed><e0><f7><e5><ed><e8><e5> <e2> <ef><f0><e8><HPHalftone Enhanced: ""
+*HPHalftone Enhanced/<d0><e0><f1><f8><e8><f0><e5><ed><ed><fb><e9>: "
+   << /Install {
+     currentpagedevice /HWResolution get
+     dup 0 get 600 eq exch 1 get 600 eq and
+     { /EnhancedColorRendering600 } { /EnhancedColorRendering } ifelse
+     /ColorRendering findresource setcolorrendering
+     /EnhancedHalftone /Halftone findresource sethalftone
+     { } settransfer false setstrokeadjust
+   }
+   >> setpagedevice
+   currentpagedevice /HWResolution get dup 0 get 600 eq exch 1 get 600 eq and
+   {
+       << /PostRenderingEnhance true
+            /PostRenderingEnhanceDetails << /REValue 0 /Type 8 >>
+       >> setpagedevice
+   } if
+   /setscreen { pop pop pop } def
+   /setcolorscreen { pop pop pop pop pop pop pop pop pop pop pop pop } def
+   /sethalftone { pop } def 
+"
+*End
+*HPHalftone Standard/<d1><f2><e0><ed><e4><e0><f0><f2><ed><fb><e9>: "
+    currentpagedevice /HWResolution get 0 get 1200 ne currentpagedevice /PreRenderingEnhance known
+    {currentpagedevice /PreRenderingEnhance get not and} if
+    {
+      << /Install 
+      {
+        currentpagedevice /HWResolution get
+        dup 0 get 600 eq exch 1 get 600 eq and dup currentpagedevice /PostRenderingEnhance get
+        currentpagedevice /PostRenderingEnhanceDetails get /REValue get 0 ne and { {/DefaultColorRenderingRE600} {/DefaultColorRenderingRE} ifelse}
+        { {/DefaultColorRendering600} {/DefaultColorRendering} ifelse} ifelse /ColorRendering findresource setcolorrendering
+        { /DefaultHalftone600 } {/DefaultHalftone} ifelse /Halftone findresource sethalftone
+        {} settransfer false setstrokeadjust
+      } >> setpagedevice
+      currentpagedevice /HWResolution get dup 0 get 600 eq exch 1 get 600 eq and 
+      {
+        << /PostRenderingEnhance true /PostRenderingEnhanceDetails << /REValue 0 /Type 8 >> >> setpagedevice
+      } if
+    } if
+"
+*End
+*?HPHalftone: "
+   save
+      currenthalftone /HalftoneType get 9 eq 
+     {(Enhanced)} {(Standard)} ifelse = flush
+   restore
+"
+*End
+*CloseUI: *HPHalftone
+
+*%=== Duplex ====================================
+*OpenUI *Duplex/<cc><ee><e4><f3><eb><fc> <e4><e2><f3><f1><f2><ee><f0><ee><ed><ed><e5><e9> <ef><eDuplex None:  PickOne
+*OrderDependency: 50 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/<c2><fb><ea><eb><fe><f7><e8><f2><fc> (<ee><e4><ed><ee><f1><f2><ee><f0><ee><ed><eDuplex DuplexNoTumble: "
+    <</Duplex false>> setpagedevice"
+*End
+*Duplex DuplexNoTumble/<d0><e0><e7><e2><e5><f0><ed><f3><f2><fc> <e2><e4><ee><eb><fc> <e4><eb><e8><ed><eDuplex DuplexTumble: "
+    <</Duplex true /Tumble false>> setpagedevice"
+*End
+*Duplex DuplexTumble/<d0><e0><e7><e2><e5><f0><ed><f3><f2><fc> <e2><e4><ee><eb><fc> <ea><ee><f0><ee><fOpenUI *Smoothing: "
+    <</Duplex true /Tumble true>> setpagedevice"
+*End
+*?Duplex: "
+   save
+      currentpagedevice /Duplex known
+      false ne
+      {  currentpagedevice /Duplex get
+        { currentpagedevice /Tumble get
+            {(DuplexTumble)}{(DuplexNoTumble)}ifelse
+         } { (None)}    ifelse 
+     }{(None)}  ifelse = flush
+   restore
+"
+*End 
+*CloseUI: *Duplex
+
+*%=== Resolution Enhancement  ========================
+*OpenUI *Smoothing/Resolution Enhancement: PickOne
+*OrderDependency: 20 DocumentSetup *Smoothing
+*DefaultSmoothing: PrinterDefault
+*Smoothing PrinterDefault/<d2><e5><ea><f3><f9><e5><e5> <e7><ed><e0><f7><e5><ed><e8><e5> <e2> <ef><f0><e8><Smoothing On: ""
+*Smoothing On/<c2><ea><eb><fe><f7><e8><f2><fc>: "
+<< /PostRenderingEnhance true
+     /PostRenderingEnhanceDetails << /REValue 2 /Type 8 >>
+>> setpagedevice"
+*End
+
+*Smoothing Off/<c2><fb><ea><eb><fe><f7><e8><f2><fc>: "
+<< /PostRenderingEnhance true
+     /PostRenderingEnhanceDetails << /REValue 0 /Type 8 >>
+>> setpagedevice"
+*End
+*?Smoothing: "
+   save
+    currentpagedevice /PostRenderingEnhanceDetails get /REValue get
+    [(Off) (On) (On) (On)]  exch get print
+   restore
+"
+*End
+*CloseUI: *Smoothing
+
+*% === Enable/Disable Collate via PostScript ==========
+*OpenUI *Collate/<cf><ee><e4><e1><ee><f0><ea><e0>:  Boolean
+*OrderDependency: 20 AnySetup *Collate
+*DefaultCollate: False
+*Collate True/<c2><ea><eb><fe><f7><e8><f2><fc> (<e2><fb><ea><eb>. <e2> <ef><f0><ee><e3>.): "
+    <</Collate true>> setpagedevice"
+*End
+*Collate False/<c2><fb><ea><eb><fe><f7><e8><f2><fc>: "
+    <</Collate false>> setpagedevice"
+*End
+*?Collate: "
+   save
+    currentpagedevice /Collate get
+    {(True)}{(False)}ifelse = flush
+   restore
+"
+*End
+*CloseUI: *Collate
+
+*DefaultTransfer: Null
+*Transfer Null: "{ }"
+*Transfer Null.Inverse: "{ 1 exch sub }"
+
+*%=== Color Control ========================
+*DefaultColorSep: ProcessBlack.85lpi.600dpi
+*InkName: ProcessBlack/<ce><e1><f0><e0><e1><ee><f2><ea><e0> <f7><e5><f0><ed><ee><e3><ee>
+*InkName: CustomColor/<cd><e5><f1><f2><e0><ed><e4><e0><f0><f2><ed><fb><e9> <f6><e2><e5><f2>
+*InkName: ProcessCyan/<ce><e1><f0><e0><e1><ee><f2><ea><e0> <f1><e8><ed><e5><e3><ee>
+*InkName: ProcessMagenta/<ce><e1><f0><e0><e1><ee><f2><ea><e0> <ef><f3><f0><ef><f3><f0><ed><ee><e3><ee>
+*InkName: ProcessYellow/<ce><e1><f0><e0><e1><ee><f2><ea><e0> <e6><e5><eb><f2><ee><e3><ee>
+
+*%  For 60 lpi / 300 dpi  ===============================
+*ColorSepScreenAngle ProcessBlack.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle CustomColor.60lpi.300x300dpi: "45"
+*ColorSepScreenAngle CustomColor.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessCyan.60lpi.300x300dpi: "45"
+*ColorSepScreenAngle ProcessCyan.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessMagenta.60lpi.300x300dpi: "15"
+*ColorSepScreenAngle ProcessMagenta.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessYellow.60lpi.300x300dpi: "75"
+*ColorSepScreenAngle ProcessYellow.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessBlack.60lpi.300x300dpi: "0"
+
+*ColorSepScreenFreq ProcessBlack.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq CustomColor.60lpi.300x300dpi: "60"
+*ColorSepScreenFreq CustomColor.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessCyan.60lpi.300x300dpi: "60"
+*ColorSepScreenFreq ProcessCyan.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessMagenta.60lpi.300x300dpi: "60"
+*ColorSepScreenFreq ProcessMagenta.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessYellow.60lpi.300x300dpi: "60"
+*ColorSepScreenFreq ProcessYellow.60lpi.300x300dpi/60  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessBlack.85lpi.600x600dpi: "60"
+
+*%  For 85 lpi / 600 dpi  (5,5,2,6,6,2,20/3,0) =====================
+*ColorSepScreenAngle ProcessBlack.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle CustomColor.85lpi.600x600dpi: "45.0"
+*ColorSepScreenAngle CustomColor.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessCyan.85lpi.600x600dpi: "45.0"
+*ColorSepScreenAngle ProcessCyan.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessMagenta.85lpi.600x600dpi: "71.5651"
+*ColorSepScreenAngle ProcessMagenta.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessYellow.85lpi.600x600dpi: "18.4349"
+*ColorSepScreenAngle ProcessYellow.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessBlack.85lpi.600x600dpi: "0.0"
+
+*ColorSepScreenFreq ProcessBlack.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq CustomColor.85lpi.600x600dpi: "84.8528"
+*ColorSepScreenFreq CustomColor.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessCyan.85lpi.600x600dpi: "84.8528"
+*ColorSepScreenFreq ProcessCyan.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessMagenta.85lpi.600x600dpi: "94.8683"
+*ColorSepScreenFreq ProcessMagenta.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessYellow.85lpi.600x600dpi: "94.8683"
+*ColorSepScreenFreq ProcessYellow.85lpi.600x600dpi/85  <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenProc ProcessYellow.85lpi.600x600dpi: "30.0"
+*ColorSepScreenProc ProcessYellow.85lpi.600x600dpi/85 lpi / 600 dpi: "
+{1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch
+1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch
+abs exch abs 2 copy add 1 gt {1 sub dup mul exch 1 sub dup mul add 1
+sub }{dup mul exch dup mul add 1 exch sub }ifelse }"
+*End
+
+*%  For 106 lpi /300 dpi  ===============================
+*ColorSepScreenAngle ProcessBlack.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle CustomColor.106lpi.300x300dpi: "45.0"
+*ColorSepScreenAngle CustomColor.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessCyan.106lpi.300x300dpi: "45.0"
+*ColorSepScreenAngle ProcessCyan.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessMagenta.106lpi.300x300dpi: "71.5651"
+*ColorSepScreenAngle ProcessMagenta.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessYellow.106lpi.300x300dpi: "18.4349"
+*ColorSepScreenAngle ProcessYellow.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessBlack.106lpi.300x300dpi: "0.0"
+     
+*ColorSepScreenFreq ProcessBlack.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq CustomColor.106lpi.300x300dpi: "106.066"
+*ColorSepScreenFreq CustomColor.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessCyan.106lpi.300x300dpi: "106.066"
+*ColorSepScreenFreq ProcessCyan.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessMagenta.106lpi.300x300dpi: "94.8683"
+*ColorSepScreenFreq ProcessMagenta.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessYellow.106lpi.300x300dpi: "94.8683"
+*ColorSepScreenFreq ProcessYellow.106lpi.300x300dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 300 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessBlack.106lpi.600x600dpi: "100.0"
+
+*%  For 106 lpi /600 dpi  ===============================
+
+*ColorSepScreenAngle ProcessBlack.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle CustomColor.106lpi.600x600dpi: "45.0"
+*ColorSepScreenAngle CustomColor.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessCyan.106lpi.600x600dpi: "45.0"
+*ColorSepScreenAngle ProcessCyan.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessMagenta.106lpi.600x600dpi: "71.5651"
+*ColorSepScreenAngle ProcessMagenta.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenAngle ProcessYellow.106lpi.600x600dpi: "18.4349"
+*ColorSepScreenAngle ProcessYellow.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessBlack.106lpi.600x600dpi: "0.0"
+     
+*ColorSepScreenFreq ProcessBlack.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq CustomColor.106lpi.600x600dpi: "106.066"
+*ColorSepScreenFreq CustomColor.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessCyan.106lpi.600x600dpi: "106.066"
+*ColorSepScreenFreq ProcessCyan.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessMagenta.106lpi.600x600dpi: "94.8683"
+*ColorSepScreenFreq ProcessMagenta.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9ColorSepScreenFreq ProcessYellow.106lpi.600x600dpi: "94.8683"
+*ColorSepScreenFreq ProcessYellow.106lpi.600x600dpi/106 <f1><f2><f0><ee><ea>/<e4><fe><e9><ec> / 600 <f2><ee><f7><e5><ea>/<e4><fe><e9Status: "100.0"
+      
+*%=== Font Information =====================
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Special ROM
+*?FontQuery: "
+   save
+   { count 1 gt
+      { exch dup 127 string cvs (/) print print (:) print
+        /Font resourcestatus {pop pop (Yes)} {(No)} ifelse =
+      } { exit } ifelse
+   } bind loop
+   (*) = flush
+   restore
+"
+*End
+
+*?FontList: "
+   save
+        (*) {cvn ==} 128 string /Font resourceforall
+        (*) = flush
+   restore
+"
+*End
+
+*%=== Printer Messages (verbatim from printer): ================
+*Message: "%%[ exitserver: permanent state may be changed ]%%"
+*Message: "%%[ Flushing: rest of job (to end-of-file) will be ignored ]%%"
+*Message: "\FontName\ not found, using Courier"
+
+*% Status (format: %%[ status: <one of these> ] %%)
+*Status: "warming up"/<ef><f0><ee><e3><f0><e5><e2>
+*Status: "idle"/<f5><ee><eb><ee><f1><f2><ee><e9> <f0><e5><e6><e8><ec>
+*Status: "busy"/<e7><e0><ed><ff><f2><ee>
+*Status: "waiting"/<f0><e5><e6><e8><ec> <ee><e6><e8><e4><e0><ed><e8><ff>
+*Status: "printing"/<ef><e5><f7><e0><f2><fc>
+*Status: "initializing"/<e8><ed><e8><f6><e8><e0><eb><e8><e7><e0><f6><e8><ff>
+*Status: "printing test page"/<ef><e5><f7><e0><f2><fc> <ea><ee><ed><f2><f0><ee><eb><fc><ed><ee><e9> <f1><f2><fStatus
+
+*Status: "PrinterError: cover open or no toner cartridge"/<ee><f2><ea><f0><fb><f2><e0> <ea><f0><fb><f8><ea><e0> <e8><eb><e8> <ed><e5><f2> Status
+*Status: "PrinterError: cover open"/<ee><f2><ea><f0><fb><f2><e0> <ea><f0><fb><f8><ea><e0>
+*Status: "PrinterError: needs attention"/<f2><f0><e5><e1><f3><e5><f2><f1><ff> <ee><e1><f1><eb><f3><e6><e8><e2><e0><ed><e8Status
+*Status: "PrinterError: no toner cartridge"/<ed><e5><f2> <ea><e0><f1><f1><e5><f2><fb> <f1> <f2><ee><ed><e5><f0><ee><ec>
+*Status: "PrinterError: warming up"/<ef><f0><ee><e3><f0><e5><e2>
+*Status: "PrinterError: manual feed"/<ef><ee><e4><e0><f7><e0> <e2><f0><f3><f7><ed><f3><fe>
+*Status: "PrinterError: out of paper"/<ed><e5><f2> <e1><f3><ec><e0><e3><e8>
+*Status: "PrinterError: Paper Jam"/<e7><e0><f2><ee><f0> <e1><f3><ec><e0><e3><e8>
+*Status: "PrinterError: paper jam"/<e7><e0><f2><ee><f0> <e1><f3><ec><e0><e3><e8>
+*Status: "PrinterError: page protect needed"/<ed><e5><ee><e1><f5><ee><e4><e8><ec><e0> <e7><e0><f9><e8><f2><e0> <f1><f2><f0><eStatus
+*Status: "PrinterError: out of memory"/<ed><e5> <f5><e2><e0><f2><e0><e5><f2> <ef><e0><ec><ff><f2><e8>
+*Status: "PrinterError: output bin full"/<e2><fb><f5><ee><e4><ed><ee><e9> <eb><ee><f2><ee><ea> <ef><ee><eb><ee><ed>
+*Status: "PrinterError: resetting printer"/<ef><e5><f0><e5><f3><f1><f2><e0><ed><ee><e2><ea><e0> <ef><f0><e8><ed><f2><e5><f0Status
+*Status: "PrinterError: toner is low"/<ec><e0><eb><ee> <f2><ee><ed><e5><f0><e0>
+*Status: "PrinterError: off line"/<e2> <e0><e2><f2><ee><ed><ee><ec><ed><ee><ec> <f0><e5><e6><e8><ec><e5>
+
+*% Printer Error (format: %%[ PrinterError: <one of these> ]%%) 
+*PrinterError: "cover open or no toner cartridge"/<ee><f2><ea><f0><fb><f2><e0> <ea><f0><fb><f8><ea><e0> <e8><eb><e8> <ed><e5><f2> PrinterError
+*PrinterError: "cover open"/<ee><f2><ea><f0><fb><f2><e0> <ea><f0><fb><f8><ea><e0>
+*PrinterError: "needs attention"/<f2><f0><e5><e1><f3><e5><f2><f1><ff> <ee><e1><f1><eb><f3><e6><e8><e2><e0><ed><e8PrinterError
+*PrinterError: "no toner cartridge"/<ed><e5><f2> <ea><e0><f1><f1><e5><f2><fb> <f1> <f2><ee><ed><e5><f0><ee><ec>
+*PrinterError: "warming up"/<ef><f0><ee><e3><f0><e5><e2>
+*PrinterError: "manual feed"/<ef><ee><e4><e0><f7><e0> <e2><f0><f3><f7><ed><f3><fe>
+*PrinterError: "out of paper"/<ed><e5><f2> <e1><f3><ec><e0><e3><e8>
+*PrinterError: "Paper Jam"/<e7><e0><f2><ee><f0> <e1><f3><ec><e0><e3><e8>
+*PrinterError: "paper jam"/<e7><e0><f2><ee><f0> <e1><f3><ec><e0><e3><e8>
+*PrinterError: "page protect needed"/<ed><e5><ee><e1><f5><ee><e4><e8><ec><e0> <e7><e0><f9><e8><f2><e0> <f1><f2><f0><ePrinterError
+*PrinterError: "out of memory"/<ed><e5> <f5><e2><e0><f2><e0><e5><f2> <ef><e0><ec><ff><f2><e8>
+*PrinterError: "output bin full"/<e2><fb><f5><ee><e4><ed><ee><e9> <eb><ee><f2><ee><ea> <ef><ee><eb><ee><ed>
+*PrinterError: "resetting printer"/<ef><e5><f0><e5><f3><f1><f2><e0><ed><ee><e2><ea><e0> <ef><f0><e8><ed><f2><e5><f0PrinterError
+*PrinterError: "toner is low"/<ec><e0><eb><ee> <f2><ee><ed><e5><f0><e0>
+*PrinterError: "off line"/<e2> <e0><e2><f2><ee><ed><ee><ec><ed><ee><ec> <f0><e5><e6><e8><ec><e5>
+
+*% Input Sources (format: %%[ status: <stat>; source: <one of these> ]%% )
+*Source: "BiTronics"/BiTronics
+*Source: "other I/O"/<e4><f0><f3><e3><e8><e5> <ea><e0><ed><e0><eb><fb> <e2><e2><ee><e4><e0>-<e2><fb><Source
+*Source: "AppleTalk"/AppleTalk
+*Source: "APPLETALK"/AppleTalk
+*Source: "ATALK"/AppleTalk
+*Source: "LocalTalk"/LocalTalk
+*Source: "Parallel"/<ef><e0><f0><e0><eb><eb><e5><eb><fc><ed><fb><e9>
+*Source: "EtherTalk"/EtherTalk
+*Source: "NOVELL"/NOVELL
+*Source: "DLC/LLC"/DLC/LLC
+*Source: "ETALK"/EtherTalk
+*Source: "TCP/IP"/TCP/IP
+
+*Password: "()"
+*ExitServer: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+     (WARNING: Cannot modify initial VM.) =
+     (Missing or invalid password.) =
+     (Please contact the author of this software.) = flush quit
+     } if
+"
+*End
+*Reset: "
+ count 0 eq
+ { false } { true exch startjob } ifelse
+ not {
+    (WARNING: Cannot reset printer.) =
+    (Missing or invalid password.) =
+    (Please contact the author of this software.) = flush quit
+    } if
+ systemdict /quit get exec
+ (WARNING : Printer Reset Failed.) = flush
+"
+*End
+
+*% ================================
+*% For "HP LaserJet 4000" version 2014.108
+*% ================================

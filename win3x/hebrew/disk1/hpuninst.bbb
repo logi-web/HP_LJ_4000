@@ -1,0 +1,8 @@
+@echo off
+del hpunin16.exe
+del hplj45.dll
+del uninstal.stt
+del bc500rtl.dll
+del btl70l.dll
+del rwtsd.exe
+del hpreboot.bat

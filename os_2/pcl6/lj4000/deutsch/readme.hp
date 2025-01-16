@@ -1,0 +1,195 @@
+Willkommen in der Druckfunktion von OS/2!
+Diese Datei enth„lt Anweisungen zur Installation Ihres
+OS/2-Druckertreibers. Nach der Installation eines Druckers unter OS/2 wird
+ein Druckerobjekt (Druckersymbol) auf der Arbeitsoberfl„che erstellt.
+Dieses Objekt enth„lt die Hardware- und Softwarekonfigurationen, die
+verwendet werden, wenn Druckjobs an den Drucker geschickt werden. Weitere
+Informationen zu Druckern und zum Drucken finden Sie im Lernprogramm
+"Einfhrung in OS/2" sowie in der Online-Dokumentation "Drucken unter
+OS/2". Sie k”nnen diese Informationen durch Doppelklicken auf die
+entsprechenden Symbole im Ordner "Information" aufrufen.
+
+Inhalt
+------
+
+     o  Installieren eines Druckers unter OS/2
+     o  ndern eines Druckertreibers im Druckerobjekt
+     o  ndern der Druckermerkmale in einem Druckerobjekt
+     o  ndern der Jobmerkmale in einem Druckerobjekt
+
+Installieren eines Druckers unter OS/2
+--------------------------------------
+
+Die Vorgehensweise beim Installieren eines Druckers h„ngt davon ab, ob bei
+der Installation von OS/2 bereits ein Drucker zur Installation ausgew„hlt
+wurde. Wurde ein Drucker ausgew„hlt, ist bereits ein Druckerobjekt auf der
+Arbeitsoberfl„che vorhanden. Wurde kein Drucker ausgew„hlt, existiert kein
+Druckerobjekt auf der Arbeitsoberfl„che. W„hlen Sie aus den folgenden
+beiden Vorgehensweise diejenige aus, die Ihrer Situation entspricht.
+
+     Auf der Arbeitsoberfl„che ist kein Druckerobjekt vorhanden
+     ----------------------------------------------------------
+
+     Fhren Sie die folgenden Schritte aus, wenn auf Ihrer
+     OS/2-Arbeitsoberfl„che noch kein Druckerobjekt vorhanden ist. Dies ist
+     dann der Fall, wenn w„hrend der Installation von OS/2 kein Drucker zur
+     Installation ausgew„hlt wurde oder bereits vorhandene Druckerobjekte
+     von der Arbeitsoberfl„che gel”scht wurden.
+
+          1.  ™ffnen Sie den Ordner "Schablonen" (dieser wurde nach der
+              Installation von OS/2 im Ordner "System" erstellt).
+          2.  Zeigen Sie auf die Schablone "Druckerobjekt".
+          3.  Drcken Sie Maustaste 2 (in der Regel die rechte
+              Maustaste) und halten Sie diese gedrckt.
+          4.  Ziehen Sie die Schablone auf die Arbeitsoberfl„che.
+          5.  Lassen Sie Maustaste 2 los.
+          6.  Geben Sie im Feld "Name" einen Druckernamen ein.
+          7.  W„hlen Sie einen Anschluá fr den Drucker aus.
+          8.  W„hlen Sie "Neuen Druckertreiber installieren" aus. Daraufhin
+              wird ein Fenster mit einer Liste der Druckertreiber angezeigt,
+              die zum Lieferumfang von OS/2 geh”ren.
+          9.  W„hlen Sie "Anderer OS/2-Druckertreiber" aus.
+         10.  Legen Sie die OS/2 Warp-CD ein.
+         11.  Geben Sie im Feld "Verzeichnis" folgenden Pfad ein:
+
+                      X:\OS2IMAGE\PMDD_Y
+
+              Dabei gilt folgendes:
+
+              X ist der Laufwerkbuchstabe fr das CD-ROM-Laufwerk.
+              Y ist eine Zahl von 1 - 6 und gibt die verschiedenen
+                Verzeichnisse an, in denen sich Druckertreiber befinden.
+
+         12.  W„hlen Sie "Aktualisieren" aus. Warten Sie, bis im Fenster
+              eine neue Liste mit Druckertreibern angezeigt wird.
+         13.  W„hlen Sie einen oder mehrere Treiber aus, indem Sie den
+              Mauszeiger auf den gewnschten Treiber setzen und die
+              linke Maustaste drcken.
+         14.  W„hlen Sie "Installieren" aus.
+
+     Auf der OS/2-Arbeitsoberfl„che befindet sich jetzt ein neues
+     Druckerobjekt. Informationen zum ndern der Einstellungen dieses
+     Druckers finden Sie in den Abschnitten "ndern eines Druckertreibers
+     im Druckerobjekt", "ndern der Druckermerkmale in einem Druckerobjekt"
+     und "ndern der Jobmerkmale in einem Druckerobjekt" in dieser Datei.
+
+     Auf der Arbeitsoberfl„che ist bereits ein Druckerobjekt vorhanden
+     -----------------------------------------------------------------
+
+     Fhren Sie die folgenden Schritte aus, wenn auf Ihrer
+     OS/2-Arbeitsoberfl„che bereits ein Druckerobjekt vorhanden ist und
+     dieses nicht dem gewnschten Drucker entspricht. Dies ist
+     beispielsweise der Fall, wenn Sie dem System einen anderen Drucker
+     hinzufgen m”chten. Gehen Sie wie folgt vor, um einen neuen
+     Druckertreiber unter Verwendung eines vorhandenen Druckerobjekts zu
+     installieren:
+
+          1.  Zeigen Sie auf das Druckerobjekt.
+          2.  Drcken Sie Maustaste 2 (in der Regel die rechte Maustaste).
+          3.  W„hlen Sie "Einstellungen" aus.
+          4.  W„hlen Sie im Notizbuch die Indexzunge "Druckertreiber" aus.
+          5.  Setzen Sie den Mauszeiger auf eines der Druckertreiberobjekte.
+          6.  Drcken Sie Maustaste 2.
+          7.  W„hlen Sie "Installieren" aus.
+          8.  W„hlen Sie "Anderer OS/2-Druckertreiber" aus.
+          9.  Legen Sie die Diskette mit den Druckertreibern in Laufwerk A:
+              ein.
+         10.  W„hlen Sie "Atkualisieren" aus. Warten Sie, bis im Fenster
+              ein neue Liste mit Druckertreibern angezeigt wird.
+         11.  W„hlen Sie einen oder mehrere Treiber aus, indem Sie den
+              Mauszeiger auf den gewnschten Treiber setzen und die
+              linke Maustaste drcken.
+         12.  W„hlen Sie "Installieren" aus.
+
+     In diesem Druckerobjekt wird jetzt ein neuer Druckertreiber installiert.
+     Informationen zum ndern der Einstellungen dieses Druckers finden Sie
+     in den Abschnitten "ndern eines Druckertreibers im Druckerobjekt",
+     "ndern der Druckermerkmale in einem Druckerobjekt" und "ndern der
+     Jobmerkmale in einem Druckerobjekt" in dieser Datei.
+
+     Hinweis: Ist der alte LaserJet-Treiber mit 16 Bit installiert,
+              l”schen Sie ihn vor dem Installieren dieses Treibers.
+
+
+ndern eines Druckertreibers im Druckerobjekt
+---------------------------------------------
+
+Nach der Installation des Druckerobjekts und des Druckertreibers muá der
+richtige Druckertreiber im Druckerobjekt ausgew„hlt werden. Dies kann auch
+erforderlich sein, wenn Sie in einem Druckerobjekt verschiedene
+Druckertreiber verwenden. Gehen Sie wie folgt vor, um einen anderen
+Druckertreiber zu installieren:
+
+     1.  Zeigen Sie auf das Druckerobjekt.
+     2.  Drcken Sie Maustaste 2 (in der Regel die rechte Maustaste).
+     3.  W„hlen Sie "Einstellungen" aus.
+     4.  W„hlen Sie im Notizbuch die Indexzunge "Druckertreiber" aus.
+     5.  W„hlen Sie den Druckertreiber aus.
+     6.  Setzen Sie den Mauszeiger auf das Symbol links oben in der
+         Titelleiste.
+     7.  Klicken Sie das Symbol doppelt an.
+
+Das Druckerobjekt wurde dadurch fr die Verwendung eines anderen
+Druckertreibers konfiguriert. Informationen zum ndern der Einstellungen
+dieses neuen Druckertreibers finden Sie in den Abschnitten "ndern der
+Druckermerkmale in einem Druckerobjekt" und "ndern der Jobmerkmale in
+einem Druckerobjekt" in dieser Datei.
+
+ndern der Druckermerkmale in einem Druckerobjekt
+-------------------------------------------------
+
+Die Einstellungen eines Druckertreibers werden als "Druckermerkmale"
+bezeichnet. Diese Merkmale beschreiben die physische Konfiguration des
+Druckers. Beispiele fr Druckermerkmale sind der Druckerspeicher, die fr
+den Drucker definierten Formulare, die den Papierf„chern des Druckers
+zugeordneten Formulare, die im Drucker installierten Schriftartkassetten,
+die installierten Druckermuster usw. Gehen Sie wie folgt vor, um die
+Druckermerkmale festzulegen:
+
+     1.  Zeigen Sie auf das Druckerobjekt.
+     2.  Drcken Sie Maustaste 2 (in der Regel die rechte Maustaste).
+     3.  W„hlen Sie "Einstellungen" aus.
+     4.  W„hlen Sie im Notizbuch die Indexzunge "Druckertreiber" aus.
+     5.  W„hlen Sie den Druckertreiber aus.
+     6.  Drcken Sie Maustaste 2.
+     7.  W„hlen Sie "Einstellungen" aus.
+     8.  ndern Sie die Merkmale entsprechend der Druckerkonfiguration.
+     9.  Setzen Sie den Mauszeiger auf das Symbol links oben in der
+         Titelleiste.
+    10.  Klicken Sie das Symbol doppelt an.
+
+Das Druckerobjekt wurde fr das Drucken eines Jobs konfiguriert.
+Informationen zum Drucken eines Jobs finden Sie in der Online-Dokumentation
+"Drucken unter OS/2", die Sie durch Anklicken des gleichnamigen Symbols im
+Ordner "Information" aufrufen k”nnen.
+
+ndern der Jobmerkmale in einem Druckerobjekt
+---------------------------------------------
+
+Fr einen Druckertreiber werden die sogenannten "Jobmerkmale" definiert.
+Diese Merkmale beschreiben, wie ein bestimmter Druckjob gedruckt wird. In
+Anwendungen k”nnen Sie in der Regel ein Druckerobjekt (eine
+Druckerwarteschlange) ausw„hlen und die Merkmale eines bestimmten Jobs
+„ndern, indem Sie die entsprechenden Druckkn”pfe anklicken. Gelegentlich
+kann es jedoch erforderlich sein, Jobmerkmale auáerhalb einer Anwendung zu
+„ndern, z. B. wenn Sie ein Dokument durch Ziehen und šbergeben drucken.
+Beispiele fr Jobmerkmale sind die Anzahl der Kopien, die Druckaufl”sung,
+die Druckqualit„t, die Farbeffekte, die Ausrichtung (Hoch- oder Querformat)
+usw. Gehen Sie wie folgt vor, um die Standardjobmerkmale eines
+Druckerobjekts auáerhalb einer Anwendung zu „ndern:
+
+     1.  Zeigen Sie auf das Druckerobjekt.
+     2.  Drcken Sie Maustaste 2 (in der Regel die rechte Maustaste).
+     3.  W„hlen Sie "Einstellungen" aus.
+     4.  W„hlen Sie im Notizbuch die Indexzunge "Druckertreiber" aus.
+     5.  Klicken Sie den Druckknopf "Jobmerkmale" doppelt an.
+
+Es wird ein Fenster mit den zur Zeit definierten Jobmerkmalen angezeigt.
+ndern Sie die Merkmale Ihren Anforderungen entsprechend. Durch Auswahl von
+"OK" wird das Fenster geschlossen, und die vorgenommenen nderungen werden
+gesichert. Die so definierten Jobmerkmale gelten fr alle Druckjobs dieses
+Druckers. Informationen zum Drucken eines Jobs finden Sie in der
+Online-Dokumentation "Drucken unter OS/2", die Sie durch Anklicken des
+gleichnamigen Symbols im Ordner "Information" aufrufen k”nnen.
+
+

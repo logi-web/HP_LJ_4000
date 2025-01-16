@@ -1,0 +1,219 @@
+Bem-vindo Ö Impress∆o do OS/2!
+Este arquivo descreve como instalar o controlador de dispositivo de impressora
+do OS/2. Ap¢s a instalaá∆o de uma impressora no OS/2, Ç criado um objeto
+impressora (°cone de impressora) no seu ambiente de trabalho. O objeto
+impressora representa uma arrumaá∆o de configuraá‰es de hardware e software
+que s∆o utilizadas ao serem enviados "jobs" de impress∆o Ö sua impressora.
+Para obter mais informaá‰es sobre impressoras e impress∆o, consulte o Tutorial
+Utilizar o OS/2 e o manual online "Imprimir no OS/2", localizado na pasta
+Informaá‰es.
+
+÷ndice
+------
+
+     1. Instalaá∆o de uma impressora no OS/2
+     2. Alteraá∆o de um controlador de impressora no objeto impressora
+     3. Alteraá∆o das Caracter°sticas da Impressora em um objeto impressora
+     4. Alteraá∆o das Caracter°sticas do Job em um objeto impressora
+
+Instalaá∆o de uma impressora no OS/2
+------------------------------------
+
+Os procedimentos para a instalaá∆o de uma impressora s∆o diferentes, dependendo
+de vocà ter selecionado uma impressora ou n∆o durante a instalaá∆o do OS/2.
+Um objeto impressora ou n∆o existe ou existe no seu ambiente de trabalho.
+Examine os dois procedimentos a seguir e escolha aquele que melhor descreve
+a sua situaá∆o.
+
+     N∆o existe um objeto impressora no seu ambiente de trabalho
+     -----------------------------------------------------------
+
+     Utilize as instruá‰es a seguir se o seu ambiente de trabalho do OS/2 n∆o
+     possuir um objeto impressora.
+
+     Seu sistema pode ter esta configuraá∆o se nenhuma impressora tiver sido
+     selecionada durante a instalaá∆o do OS/2 ou se todos os objetos de
+     impress∆o tiverem sido eliminados do ambiente de trabalho. Para criar
+     um objeto impressora e instalar um controlador de impressora, siga os
+     seguintes passos:
+
+          1.  Abra a Pasta Gabaritos (localizada na pasta Sistema OS/2 ap¢s
+              a instalaá∆o do OS/2).
+
+          2.  Aponte para o gabarito Impressora.
+
+          3.  Pressione e mantenha pressionado o bot∆o 2 do mouse.
+
+          4.  Arraste o gabarito para o ambiente de trabalho.
+
+          5.  Solte o bot∆o 2 do mouse.
+
+          6.  Digite um nome para uma impressora no campo "Nome".
+
+          7.  Selecione uma porta Ö qual a impressora esteja conectada.
+
+          8.  Selecione "Instalar novo controlador de impressora". Ser† exibida uma janela com
+              uma lista dos controladores de impressora fornecidos com o OS/2.
+
+          9.  Selecione "Outro controlador de impressora".
+
+         10.  Insira na unidade A o disquete que contÇm os controladores de
+              impressoras.
+
+         11.  Selecione "Atualizar". Aguarde atÇ que a janela exiba os
+              controladores de impressora.
+
+         12.  Selecione um ou mais controladores dando um clique com o bot∆o
+              esquerdo do mouse sobre o controlador desejado.
+
+         13.  Selecione "Instalar".
+
+     Agora existe um novo objeto impressora no Ambiente de Trabalho do OS/2.
+     Se desejar personalizar as definiá‰es deste novo objeto impressora,
+     consulte as seá‰es "Alteraá∆o de um controlador de impressora no objeto
+     impressora", "Alteraá∆o das Caracter°sticas da Impressora em um objeto
+     impressora" ou "Alteraá∆o das Caracter°sticas do Job em um objeto
+     impressora" neste arquivo "leia-me".
+
+     Existe um objeto impressora no seu ambiente de trabalho
+     -------------------------------------------------------
+
+     Utilize as instruá‰es a seguir se existir um objeto impressora no ambiente
+     de trabalho do OS/2, mas vocà n∆o possuir o controlador de impressora
+     correto no sistema. Isto poder† ocorrer se vocà adicionar uma impressora
+     diferente ao sistema. Para instalar um novo controlador de impressora e
+     utilizar um objeto impressora existente, siga estes passos:
+
+          1.  Aponte para o objeto impressora.
+
+          2.  Dà um clique com o bot∆o 2 do mouse.
+
+          3.  Selecione "Definiá‰es".
+
+          4.  Selecione o item "Controlador de impressora".
+
+          5.  Aponte para um dos objetos controlador de impressora.
+
+          6.  Dà um clique com o bot∆o 2 do mouse.
+
+          7.  Selecione "Instalar".
+
+          8.  Selecione "Outro controlador de impressora do OS/2".
+
+          9.  Insira na unidade A o disquete que contÇm os controladores de
+              impressora.
+
+         10.  Selecione "Atualizar". Aguarde atÇ que a janela exiba os
+              controladores de impressora.
+
+         11.  Selecione um ou mais controladores dando um clique com o bot∆o
+              esquerdo do mouse sobre o controlador desejado.
+
+         12.  Selecione "Instalar".
+
+     Agora existe um novo controlador de impressora instalado neste objeto
+     impressora. Se desejar personalizar as definiá‰es deste novo objeto
+     impressora, consulte as seá‰es "Alteraá∆o do controlador de impressora
+     no objeto impressora", "Alteraá∆o das Caracter°sticas da Impressora"
+     ou "Alteraá∆o das Caracter°sticas do Job em um objeto impressora" neste
+     arquivo readme.
+
+
+
+Alteraá∆o de um controlador de impressora no objeto impressora
+--------------------------------------------------------------
+
+Depois que o objeto impressora e o controlador de impressora tiverem sido
+instalados, o controlador de impressora correto dever† ser selecionado no
+objeto de impress∆o. Isto tambÇm poder† ser necess†rio se vocà utilizar
+controladores de impressora diferentes com um £nico objeto de impress∆o.
+Para mudar para um controlador de impressora diferente:
+
+          1.  Aponte para o objeto impressora.
+
+          2.  Dà um clique com o bot∆o 2 do mouse.
+
+          3.  Selecione as definiá‰es.
+
+          4.  Selecione o item "Controlador de impressora".
+
+          5.  Selecione o controlador de impressora.
+
+          6.  Aponte para o °cone da barra de t°tulo.
+
+          7.  Dà um clique duplo.
+
+Agora o objeto impressora est† configurado para utilizar um controlador de
+impressora diferente. Se desejar personalizar as definiá‰es deste novo
+controlador de impressora, consulte as seá‰es "Alteraá∆o das Caracter°sticas
+da Impressora" ou "Alteraá∆o das Caracter°sticas do Job em um objeto
+impressora" neste arquivo leia-me.
+
+Alteraá∆o das Caracter°sticas da Impressora em um objeto impressora
+-------------------------------------------------------------------
+
+Um controlador de impressora possui definiá‰es denominadas "Caracter°sticas
+da Impressora". As caracter°sticas da impressora descrevem como sua impressora
+est† configurada fisicamente. Alguns exemplos destas caracter°sticas s∆o a
+quantidade de mem¢ria da impressora, os formul†rios definidos para ela, os
+formul†rios associados Ös bandejas de papel da impressora, os cartuchos de
+fontes carregados nela, os padr‰es de impressora instalados etc. Para definir
+as caracter°sticas da impressora:
+
+          1.  Aponte para o objeto impressora.
+
+          2.  Dà um clique com o bot∆o 2 do mouse.
+
+          3.  Selecione "Definiá‰es".
+
+          4.  Selecione o item "Controlador de impressora".
+
+          5.  Aponte para o controlador de impressora.
+
+          6.  Dà um clique com o bot∆o 2 do mouse.
+
+          7.  Selecione "Definiá‰es".
+
+          8.  Altere as caracter°sticas de acordo com a configuraá∆o de sua
+              impressora.
+
+          9.  Aponte para o °cone da barra de t°tulo.
+
+         10.  Dà um clique duplo.
+
+      Agora o seu objeto impressora est† configurado para imprimir um job.
+      Para obter informaá‰es sobre como imprimir um job, consulte o manual
+      online "Imprimir no OS/2", localizado na pasta Informaá‰es.
+
+     Nota: Se vocà tem o controlador LaserJet de 16 bits instalado no seu
+           sistema, elimine-o antes de instalar este controlador.
+
+Alteraá∆o das Caracter°sticas do Job em um objeto impressora
+------------------------------------------------------------
+
+Um controlador de impressora possui definiá‰es chamadas de "Caracter°sticas do
+Job". As caracter°sticas do job descrevem como um determinado job de impress∆o
+ser† impresso. Em geral, as aplicaá‰es permitem que vocà selecione um objeto
+impressora (chamado, Ös vezes, de fila da impressora) e altere as
+"Caracter°sticas do Job" associadas a um determinado job dando um clique sobre
+os bot‰es de configuraá∆o ou de opá‰es. No entanto, Ös vezes vocà poder†
+desejar alterar as Caracter°sticas do Job fora de uma aplicaá∆o, tal como
+na impress∆o do tipo arrastar e soltar. Alguns exemplos de caracter°sticas do
+job s∆o n£mero de c¢pias, resoluá∆o de impress∆o, qualidade de impress∆o,
+efeitos de cores, orientaá∆o (vertical ou horizontal) etc. As Caracter°sticas
+do Job padr∆o associadas a um objeto impressora podem ser alteradas fora de
+aplicaá‰es da seguinte forma:
+
+          1.  Aponte para o objeto impressora.
+
+          2.  Dà um clique com o bot∆o 2 do mouse.
+
+          3.  Selecione "Definiá‰es".
+
+          4.  Dà um clique duplo sobre o bot∆o "Caracter°sticas do Job".
+
+Agora as caracter°sticas do job padr∆o associadas a um objeto impressora est∆o
+configuradas. Para obter mais informaá‰es sobre como imprimir um job, consulte
+o manual online "Imprimir no OS/2", localizado na pasta Informaá‰es.
+
+

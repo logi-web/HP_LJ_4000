@@ -1,0 +1,92 @@
+
+[Version]
+signature="$Windows NT$"
+ClassGUID={00000000-0000-0000-0000-000000000000}
+
+;
+; diskid = description,tagfile,unused,subdir
+;
+
+[SourceDisksNames]
+_x = %cddisk%,\winnt,,""
+_1 = %cddisk%,\winnt,,""
+
+[SourceDisksNames.alpha]
+1 = %cddisk%,\cdrom_w.40,,\alpha
+
+[SourceDisksNames.mips]
+1 = %cddisk%,\cdrom_w.40,,\mips
+
+[SourceDisksNames.ppc]
+1 = %cddisk%,\cdrom_w.40,,\ppc
+
+[SourceDisksNames.x86]
+1 = %dsk1%,,,""
+2 = %dsk2%,,,""
+
+;[SourceDisksNames.x86]
+;1 = %dsk1%,SETUP.LST
+;2 = %dsk2%,HPBXLK4.DL_
+
+
+;
+; These sections are used during text-mode setup and correspond
+; to the targetdirectory field in the [SourceDisksFiles] section.
+;
+[WinntDirectories]
+1  = "\"
+2  = system32
+3  = system32\config
+4  = system32\drivers
+5  = system
+6  = system32\os2
+7  = system32\ras
+8  = system32\os2\dll
+9  = system32\spool
+10 = system32\spool\drivers
+11 = system32\spool\drivers\w32x86\2
+12 = system32\spool\prtprocs
+13 = system32\spool\prtprocs\w32x86
+14 = system32\wins
+15 = system32\dhcp
+16 = repair
+17 = system32\drivers\etc
+18 = system32\spool\drivers\w32x86
+19 = system32\viewers
+20 = inf
+21 = Help
+22 = Fonts
+23 = Config
+24 = Profiles
+25 = Cursors
+26 = Media
+
+;
+; filename_on_source = diskid,subdir,size,checksum,spare,spare
+; extra fields are nt-specific
+;   bootmediaord,targetdirectory,upgradedisposition,textmodedisposition,targetname
+;
+[SourceDisksFiles]
+HPRASDUI.DL_ = 1,,,,,,,,11,3
+HPRASDUI.HL_ = 1,,,,,,,,11,3
+PSCRIPT.DL_  = 1,,,,,,,,11,3
+PSCRIPT.HL_  = 1,,,,,,,,11,3
+PSCRIPT.SEP  = 1,,,,,,,,2,3
+PSCRIPTUI.DL_= 1,,,,,,,,11,3
+HP4000_6.PPD = 1,,,,,,,,11,3
+HP5000_6.PPD = 1,,,,,,,,11,3
+HPDCMON.DLL  = 1,,,,,,,,2,3
+HPBPCLA.DL_  = 2,,,,,,,,11,3
+HPBPCLA1.DL_ = 2,,,,,,,,11,3
+HPBPCLA.HL_  = 2,,,,,,,,11,3
+HPRASDD.DL_  = 2,,,,,,,,11,3
+HPBXLK4.DL_  = 2,,,,,,,,11,3
+HPBXLK5.DL_  = 2,,,,,,,,11,3
+HPBXLK6.DL_  = 2,,,,,,,,11,3
+HPBXLK7.DL_  = 2,,,,,,,,11,3
+HPBXLK7.HL_  = 2,,,,,,,,11,3
+
+[Strings]
+cddisk="HP LaserJet 4000 CD-ROM"
+dsk1="HP LaserJet 4000 Disk1"
+dsk2="HP LaserJet 4000 Disk2"

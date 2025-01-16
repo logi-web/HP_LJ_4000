@@ -1,0 +1,163 @@
+Skriva ut i OS/2
+Den h„r filen beskriver hur du installerar skrivardrivrutinen f”r OS/2. Ett
+skrivarobjekt (en skrivarikon) skapas p† ditt skrivbord n„r du har installerat
+en skrivare i OS/2. Skrivarobjektet representerar den kombination av
+maskinvaru- och mjukvarukonfigurationer som anv„nds n„r en utskrift skickas
+till skrivaren. Om du vill ha mer information om skrivare och utskrifter kan
+du k”ra sj„lvstudiekursen Anv„nda OS/2 eller l„sa boken "Om utskrifter i OS/2"
+som finns online i mappen Information.
+
+Inneh†ll
+--------
+
+     1. Installera en skrivare i OS/2
+     2. Žndra en skrivardrivrutin f”r ett skrivarobjekt
+     3. Žndra skrivaregenskaper f”r ett skrivarobjekt
+     4. Žndra utskriftsegenskaper f”r ett skrivarobjekt
+
+Installera en skrivare i OS/2
+-----------------------------
+
+Installationsproceduren f”r skrivare beror p† om du valde en skrivare
+n„r du installerade OS/2 eller inte. Antingen har du ett skrivarobjekt p†
+skrivbordet eller ocks† har du inte det. V„lj den av de tv† procedurerna
+nedan som b„st st„mmer ”verens med din situation.
+
+     Det finns inget skrivarobjekt p† skrivbordet
+     --------------------------------------------
+
+     Anv„nd de h„r anvisningarna om skrivbordet saknar skrivarobjekt.
+     Ett system kan ha den h„r konfigurationen om ingen skrivare valdes n„r
+     OS/2 installerades eller om skrivarobjekten tagits bort fr†n skrivbordet.
+     Om du vill skapa ett skrivarobjekt och installera en skrivardrivrutin
+     f”ljer du nedanst†ende steg:
+
+          1.  ™ppna mappen Mallar (finns i mappen OS/2\system n„r
+              OS/2 installerats).
+          2.  Peka p† en skrivarmall.
+          3.  Tryck p† och h†ll ner musknapp 2.
+          4.  Dra mallen till skrivbordet.
+          5.  Sl„pp musknapp 2.
+          6.  Ge skrivaren ett namn i f„ltet "Namn".
+          7.  Markera den port skrivaren „r ansluten till.
+          8.  V„lj "Installera ny skrivardrivrutin." Ett f”nster med en lista
+                ”ver de skrivardrivrutiner som levereras med OS/2 visas.
+          9.  V„lj "Andra skrivardrivrutiner".
+         10.  S„tt in den diskett som inneh†ller skrivardrivrutinerna i
+                enhet A.
+         11.  V„lj "Uppdatera". V„nta tills f”nstret fyllts med
+                skrivardrivrutiner.
+         12.  Markera en eller flera drivrutiner genom att klicka med v„nster
+                musknapp p† ”nskad drivrutin.
+         13.  V„lj "Installera".
+
+     Ett nytt skrivarobjekt finns nu p† OS/2-skrivbordet. Om du vill anpassa
+     inst„llningarna f”r det nya skrivarobjektet l„ser du avsnitten "Žndra
+     skrivardrivrutin f”r ett skrivarobjekt", "Žndra skrivaregenskaper f”r
+     ett skrivarobjekt" eller "Žndra utskriftsegenskaper f”r ett skrivarobjekt"
+     i den h„r filen.
+
+     Det finns ett skrivarobjekt p† skrivbordet
+     ------------------------------------------
+
+     Anv„nd de h„r anvisningarna om skrivbordet har ett skrivarobjekt,
+     men r„tt skrivardrivrutin saknas p† systemet . S† kan vara fallet
+     om du l„gger till en ny skrivare till systemet. Om du vill installera
+     en ny skrivardrivrutin och anv„nda ett befintligt skrivarobjekt f”ljer
+     du nedanst†ende steg:
+          1.  Peka p† skrivarobjektet.
+          2.  Klicka med musknapp 2.
+          3.  V„lj "Inst„llningar".
+          4.  V„lj fliken "Skrivardrivrutin".
+          5.  Peka p† en av skrivardrivrutinerna.
+          6.  Klicka med musknapp 2.
+          7.  V„lj "Installera".
+          8.  V„lj "Annan OS/2-skrivardrivrutin".
+          9.  S„tt i den diskett som inneh†ller skrivardrivrutinerna i enhet A.
+         10.  V„lj "Uppdatera". V„nta tills f”nstret fyllts med
+                skrivardrivrutiner.
+         11.  Markera en eller flera drivrutiner genom att klicka med v„nster
+                musknapp p† ”nskad drivrutin.
+         12.  V„lj "Installera".
+
+     En ny skrivardrivrutin har nu installerats i skrivarobjektet. Om du vill
+     anpassa inst„llningarna f”r det nya skrivarobjektet l„ser du avsnitten
+     "Žndra skrivardrivrutin f”r ett skrivarobjekt", "Žndra skrivaregenskaper
+     f”r ett skrivarobjekt" eller "Žndra utskriftsegenskaper f”r ett
+     skrivarobjekt" i den h„r filen.
+
+     Anm: Om du har den gamla 16-bitars drivrutinen f”r LaserJet installerad
+          ska du ta bort den innan du installerar den h„r drivrutinen.
+
+
+Žndra skrivardrivrutin f”r ett skrivarobjekt
+--------------------------------------------
+
+N„r b†de skrivarobjektet och skrivardrivrutinen har installerats ska r„tt
+skrivardrivrutin v„ljas i skrivarobjektet. Detta kan ocks† vara n”dv„ndigt
+om du anv„nder olika skrivardrivrutiner med ett enda skivarobjekt.
+G”r s† h„r om du vill byta skrivardrivrutin:
+
+     1.  Peka p† skrivarobjektet.
+     2.  Klicka med musknapp 2.
+     3.  V„lj Inst„llningar.
+     4.  V„lj fliken "Skrivardrivrutiner".
+     5.  Markera skrivardrivrutinen.
+     6.  Peka p† rubrikradens ikon.
+     7.  Dubbelklicka.
+
+Skrivarobjektet kan nu anv„nda en annan skrivardrivrutin. Om du vill
+anpassa inst„llningarna f”r den nya skrivardrivrutinen l„ser du avsnitten
+"Žndra skrivaregenskaper f”r ett skrivarobjekt" eller "Žndra
+utskriftsegenskaper f”r ett skrivarobjekt" i den h„r filen.
+
+Žndra skrivaregenskaper f”r ett skrivarobjekt
+---------------------------------------------
+
+En skrivardrivrutin har en inst„llning som kallas "Skrivaregenskaper".
+Skrivaregenskaper beskriver de fysiska inst„llningarna f”r din skrivare.
+Exempel p† skrivaregenskaper „r m„ngden minne i skrivaren, format
+som definierats f”r skrivaren, format kopplade till skrivarens
+pappersmagasin, vilka fontkasetter som laddats, installerade skrivarm”nster,
+osv. G”r s† h„r om du vill st„lla in skrivaregenskaper:
+
+     1.  Peka p† skrivarobjektet.
+     2.  Klicka med musknapp 2.
+     3.  V„lj "Inst„llningar".
+     4.  V„lj fliken "Skrivardrivrutin".
+     5.  Peka p† skrivardrivrutinen.
+     6.  Klicka med musknapp 2.
+     7.  V„lj "Inst„llningar".
+     8.  Žndra egenskaperna s† att de st„mmer ”verens med skrivarinst„llningen.
+     9.  Peka p† rubrikradens ikon.
+    10.  Dubbelklicka.
+
+Skrivarobjektet „r nu klart f”r att ta f”rmedla utskrifter. Om du vill ha
+information om hur du skriver ut kan du l„sa boken "Utskrifter i OS/2"
+som finns online i mappen Information.
+
+Žndra utskriftsegenskaper f”r ett skrivarobjekt
+-----------------------------------------------
+
+En skrivardrivrutin har en inst„llning som kallas "Utskriftsegenskaper".
+Utskriftsegenskaper beskriver hur en viss utskrift ska utf”ras.
+De flesta program l†ter dig v„lja skrivarobjekt (kallas ibland f”r
+skrivark”) och „ndra de utskriftsegenskaper som h”r ihop med en viss
+genom att klicka p† installations- eller alternativknappar. Emellertid
+finns det tillf„llen d† du vill „ndra utskriftsegenskaper utanf”r ett
+program, t ex n„r du anv„nder dra-och-sl„pp-utskrift. Exempel p†
+utskriftsegenskaper „r antal kopior, uppl”sning, utskriftskvalitet,
+f„rgeffekter, utskriftsledd (st†ende eller liggande), osv. De standardv„rden
+f”r utskriftsegenskaper som h”r ihop med ett skrivarobjekt kan „ndras
+s† h„r:
+
+     1.  Peka p† skrivarobjektet.
+     2.  Klicka med musknapp 2.
+     3.  V„lj "Inst„llningar".
+     4.  Dubbelklicka p† knappen "Utskriftsegenskaper".
+
+Skrivarobjektet har nu f†tt standardv„rden f”r utskriftsegenskaper.
+Om du vill ha information om hur du skriver ut kan du l„sa boken "Om utskrifter
+i OS/2" som finns online i mappen Information.
+
+

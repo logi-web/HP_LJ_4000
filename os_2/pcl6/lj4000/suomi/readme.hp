@@ -1,0 +1,202 @@
+T„ss„ tiedostossa kuvataan kirjoittimen OS/2-laiteajurin asennus. Kun
+kirjoitin on asennettu OS/2:een, j„rjestelm„ luo kirjoitinobjektin
+(kirjoitinkuvakkeen) ty”p”yt„„n. Kirjoitinobjekti edustaa laite- ja
+ohjelmistoasetuksia, joita k„ytet„„n, kun kirjoittimeen l„hetet„„n
+tulostusty”. Lis„tietoja kirjoittimista ja tulostuksesta on
+OS/2:n opetusohjelmassa ja Opastus-kansiossa olevassa Tulostus
+OS/2:ssa -opasohjelmassa.
+
+Sis„llys
+--------
+
+     1. Kirjoittimen asennus OS/2:ssa
+     2. Kirjoitinajurin vaihto kirjoitinobjektissa
+     3. Kirjoittimen ominaisuuksien muutto kirjoitinobjektissa
+     4. Ty”n ominaisuuksien muutto kirjoitinobjektissa
+
+Kirjoittimen asennus OS/2:ssa
+-----------------------------
+
+Toimet kirjoittimen asentamiseksi riippuvat siit„, valitsitko
+kirjoittimen OS/2:n asennuksessa. Kirjoitinobjekti joko on
+tai ei ole ty”p”yd„ss„.
+Valitse seuraavista ohjeista parhaiten tilannetta kuvaava.
+
+     Ty”p”yd„ss„ ei ole kirjoitinobjektia
+     ------------------------------------
+
+     Seuraa n„it„ ohjeita, jos OS/2:n ty”p”yd„ss„ ei ole kirjoitinobjektia.
+
+     J„rjestelm„n asetukset voivat olla t„llaiset, jos OS/2:n asennuksen
+     aikana ei ole valittu kirjoitinta tai jos kaikki kirjoitinobjektit on
+     poistettu ty”p”yd„st„. Kirjoitinobjektin luonti ja kirjoitinajurin
+     asennus tapahtuvat seuraavalla tavalla: 
+
+          1.  Avaa Mallipohjat-kansio.
+
+          2.  Siirr„ hiiren osoitin Kirjoitin-mallipohjan p„„lle.
+
+          3.  Paina ja pid„ hiiren painike 2 alhaalla.
+
+          4.  Ved„ mallipohja ty”p”yt„„n.
+
+          5.  Vapauta hiiren painike 2.
+
+          6.  Kirjoita kirjoittimen nimi Nimi-kentt„„n.
+
+          7.  M„„rit„ portti, johon kirjoitin on liitetty.
+
+          8.  Valitse Uuden kirjoitinajurin asennus -painike. N„ytt””n tulee
+              ikkuna, jossa on luettelo OS/2:n mukana toimitetuista
+              kirjoitinajureista.
+
+          9.  Valitse Muu OS/2:n kirjoitinajuri -valintanappi.
+
+         10.  Aseta kirjoitinajurilevyke levykeasemaan A.
+
+         11.  Napsauta Verestys-painiketta. Ikkunaan tulee luettelo
+              kirjoitinajureista.
+
+         12.  Valitse v„hint„„n yksi ajuri napsauttamalla ajurin nime„ hiiren
+              painikkeella 1.
+
+         13.  Napsauta Asennus-painiketta.
+
+     OS/2:n ty”p”yd„ss„ on nyt uusi kirjoitinobjekti. Jos haluat muuttaa
+     uuden kirjoitinobjektin asetuksia, katso ohjeita t„m„n readme-tiedoston
+     kohdista Kirjoittimen ominaisuuksien muutto, Tulostusty”n ominaisuuksien
+     muutto tai Ty”n ominaisuuksien muutto kirjoitinobjektissa.
+
+     Ty”p”yd„ss„ on kirjoitinobjekti
+     -------------------------------
+
+     Seuraa n„it„ ohjeita, jos OS/2:n ty”p”yd„ss„ on kirjoitinobjekti, mutta
+     j„rjestelm„„n ei ole asennettu oikeaa kirjoitinajuria. N„in voi k„yd„,
+     jos lis„„t j„rjestelm„„n uuden kirjoittimen. Uuden kirjoitinajurin
+     asennus k„ytt„en nykyist„ kirjoitinobjektia tapahtuu seuraavasti:
+
+          1.  Siirr„ hiiren osoitin kirjoitinobjektin p„„lle.
+
+          2.  Napsauta hiiren painiketta 2.
+
+          3.  Valitse Asetukset-vaihtoehto.
+
+          4.  Valitse muistikirjan Kirjoitinajuri-kieleke.
+
+          5.  Siirr„ hiiren osoitin jonkin kirjoitinajuriobjektin p„„lle.
+
+          6.  Napsauta hiiren painiketta 2.
+
+          7.  Napsauta Asennus-painiketta.
+
+          8.  Valitse Muu OS/2:n kirjoitinajuri -valintanappi.
+
+          9.  Aseta kirjoitinajurilevyke levykeasemaan A.
+
+         10.  Napsauta Verestys-painiketta. Ikkunaan tulee luettelo
+              kirjoitinajureista.
+
+         11.  Valitse v„hint„„n yksi ajuri napsauttamalla ajurin nime„ hiiren
+              painikkeella 1.
+
+         12.  Napsauta Asennus-painiketta.
+
+
+     T„h„n kirjoitinobjektiin on nyt asennettu uusi kirjoitinajuri. Jos haluat
+     muuttaa uuden kirjoitinobjektin asetuksia, katso ohjeita t„m„n readme-
+     tiedoston kohdista Kirjoittimen ominaisuuksien muutto, Tulostusty”n
+     ominaisuuksien muutto tai Ty”n ominaisuuksien muutto kirjoitinobjektissa.
+ 
+     Huomautus: Jos j„rjestelm„„n on asennettu vanha 16-bittinen LaserJet-ajuri,
+                poista se ennen t„m„n ajurin asennusta.
+
+Kirjoitinajurin vaihto kirjoitinobjektissa
+------------------------------------------
+
+Kun kirjoitinobjekti ja kirjoitinajuri on asennettu, valitaan
+kirjoitinobjektissa oikea kirjoitinajuri. T„m„ voi olla my”s tarpeen,
+jos samassa kirjoitinobjektissa k„ytet„„n useita kirjoitinajureita.
+Kirjoitinajurin vaihto tapahtuu seuraavasti:
+
+     1.  Siirr„ hiiren osoitin kirjoitinobjektin p„„lle.
+
+     2.  Napsauta hiiren painiketta 2.
+
+     3.  Valitse Asetukset-vaihtoehto.
+
+     4.  Valitse muistikirjan Kirjoitinajuri-kieleke.
+
+     5.  Valitse haluamasi kirjoitinajuri.
+
+     6.  Siirr„ hiiren osoitin otsikkorivin symbolin p„„lle.
+
+     7.  Kaksoisnapsauta hiiren painiketta 1.
+
+Kirjoitinobjekti k„ytt„„ nyt eri kirjoitinajuria. Jos haluat muuttaa
+kirjoitinajurin asetuksia, katso ohjeita t„m„n readme-tiedoston kohdista
+Kirjoittimen ominaisuuksien muutto ja  Ty”n ominaisuuksien muutto
+kirjoitinobjektissa.
+
+Kirjoittimen ominaisuuksien muutto kirjoitinobjektissa
+------------------------------------------------------
+
+Kirjoitinajurilla on asetuksia, joita kutsutaan kirjoittimen ominaisuuksiksi. 
+Kirjoittimen ominaisuudet kuvaavat kirjoittimen kokoonpanoa. Esimerkkej„
+kirjoittimen ominaisuuksista ovat kirjoittimeen asennetun muistin m„„r„,
+kirjoittimelle m„„ritetyt lomaketyypit, sy”tt”lokeroihin m„„ritetyt
+lomakkeet, kirjoittimeen asennetut fonttikasetit, asennetut
+kirjoitinkuviot jne. Kirjoittimen ominaisuuksien asetus tapahtuu
+seuraavasti:
+
+     1.  Siirr„ hiiren osoitin kirjoitinobjektin p„„lle.
+
+     2.  Napsauta hiiren painiketta 2.
+
+     3.  Valitse Asetukset-vaihtoehto.
+
+     4.  Valitse muistikirjan Kirjoitinajuri-kieleke.
+
+     5.  Siirr„ hiiren osoitin kirjoitinajuriobjektin p„„lle.
+
+     6.  Napsauta hiiren painiketta 2.
+
+     7.  Valitse Asetukset-vaihtoehto.
+
+     8.  Muuta ominaisuuksia niin, ett„ ne kuvaavat kirjoittimen kokoonpanoa.
+
+     9.  Siirr„ hiiren osoitin otsikkorivin symbolin p„„lle.
+
+    10.  Kaksoisnapsauta hiiren painiketta 1.
+
+Kirjoitinobjekti on nyt valmis tulostamaan. Lis„tietoja tulostuksesta on
+Opastus-kansiossa olevassa Tulostus OS/2:ssa -opasohjelmassa. 
+
+Ty”n ominaisuuksien muutto kirjoitinobjektissa
+----------------------------------------------
+
+Kirjoitinajurilla on asetuksia, joita kutsutaan ty”n ominaisuuksiksi. Ty”n
+ominaisuudet kuvaavat, miten tietty tulostusty” tulostetaan. Sovelluksissa
+on yleens„ mahdollista valita kirjoitinobjekti (jota joskus kutsutaan
+tulostusjonoksi) ja muuttaa tiettyyn tulostusty”h”n liittyvi„ ty”n
+ominaisuuksia napsauttamalla hiirell„ Asetukset- tai Valinnat-painiketta. 
+Joskus on kuitenkin tarpeen muuttaa ty”n ominaisuuksia sovelluksen
+ulkopuolella, esimerkiksi k„ytett„ess„ veto ja pudotus -tulostusta. 
+Esimerkkej„ ty”n ominaisuuksista ovat kopioiden m„„r„, tulostuksen
+erotuskyky, tulostusj„ljen laatu, v„ritehosteet, tulostussuunta
+(pitk„n tai lyhyen sivun suuntainen) jne. Kirjoitinobjektiin liittyvien
+ty”n ominaisuuksien oletusasetuksia voi sovellusten ulkopuolella muuttaa
+seuraavasti:
+
+     1.  Siirr„ hiiren osoitin kirjoitinobjektin p„„lle.
+
+     2.  Napsauta hiiren painiketta 2.
+
+     3.  Valitse Asetukset-vaihtoehto.
+
+     4.  Napsauta hiirell„ Ty”n ominaisuudet -painiketta.
+
+Kirjoitinobjektiin liittyvien t”iden ominaisuuksien oletusasetukset on nyt
+tehty. Lis„tietoja tulostuksesta on Opastus-kansiossa olevassa
+Tulostus OS/2:ssa -opasohjelmassa. 
+
+

@@ -1,0 +1,170 @@
+Afdrukken in OS/2
+In dit bestand vindt u een beschrijving over de installatie van
+OS/2-printerstuurprogramma's voor uw printer. Nadat u tijdens de
+installatie van OS/2 een printer hebt geselecteerd, wordt er een
+printerobject (een pictogram dat een printer voorstelt) op de Werkplek
+gemaakt. Het printerobject staat voor een aantal apparatuur- en
+programmatuurinstellingen dat wordt gebruikt wanneer u afdruktaken
+naar de printer stuurt. Raadpleeg voor meer informatie
+Introductie OS/2 Warp en het online boek Afdrukken in OS/2 dat zich
+bevindt in de map Bibliotheek.
+
+Inhoud
+------
+
+     1. Een printer in OS/2 installeren
+     2. Een printerstuurprogramma in een printerobject wijzigen
+     3. De printergegevens in een printerobject wijzigen
+     4. De afdrukgegevens in een printerobject wijzigen
+
+Een printer in OS/2 installeren
+-------------------------------
+
+Er zijn twee procedures het installeren van een printer, afhankelijk
+van het feit of u al dan niet een printer hebt geselecteerd tijdens de
+installatie van OS/2. Als u tijdens de installatie van OS/2 een printer
+hebt geselecteerd, bevindt zich op de Werkplek een printerobject. Kies
+de procedure die van toepassing is op uw situatie.
+
+     Op de Werkplek bevindt zich geen printerobject
+     ----------------------------------------------
+
+     Voer de onderstaande stappen uit als er geen printerobject op de
+     Werkplek van OS/2 voorkomt. Uw systeem heeft mogelijk deze configuratie
+     als er geen printer tijdens de installatie van OS/2 is geselecteerd of
+     als alle printerobjecten op de Werkplek zijn gewist. U kunt als volgt
+     een printerobject maken en een printerstuurprogramma installeren:
+
+          1.  Open de map Modellen. Na de installatie van OS/2 bevindt
+              deze map bevindt zich in de map Systeem.
+          2.  Plaats de muisaanwijzer op het model Printer.
+          3.  Druk muisknop 2 in en houd deze ingedrukt.
+          4.  Sleep het model naar de Werkplek.
+          5.  Laat muisknop 2 los.
+          6.  Typ een naam voor de printer in het veld Naam.
+          7.  Selecteer de poort waarop de printer is aangesloten.
+          8.  Kies de opdrachtknop Printerstuurprogramma installeren.
+              Vervolgens wordt een venster afgebeeld met een lijst van de
+              printerstuurprogramma's die zijn geleverd met OS/2.
+          9.  Selecteer het keuzerondje Niet geleverd met OS/2.
+         10.  Plaats de diskette met de printerstuurprogramma's in station A.
+         11.  Kies de opdrachtknop Vernieuwen. In het venster worden vervolgens
+              de printerstuurprogramma's afgebeeld.
+         12.  Selecteer een of meer prnterstuurprogramma's door de
+              muisaanwijzer op het gewenste stuurprogramma te plaatsen en
+              op muisknop 1 te drukken.
+         13.  Kies de opdrachtknop Installeren.
+
+     Het nieuwe printerobject bevindt zich nu op de Werkplek van OS/2.
+     Raadpleeg de onderwerpen "Een printerstuurprogramma van een
+     printerobject wijzigen", "De printergegevens in een printerobject
+     wijzigen" of "De afdrukgegevens in een printerobject wijzigen" in dit
+     README-bestand, als u de instellingen van het nieuwe printerobject wilt
+     wijzigen.
+
+     Op de Werkplek bevindt zich een printerobject
+     ---------------------------------------------
+
+     Voer de onderstaande stappen uit als er wel een printerobject op de
+     Werkplek van OS/2 voorkomt, maar niet het juiste printerstuurprogramma
+     op uw systeem is ge‹nstalleerd. Dit is mogelijk als u een andere printer
+     op uw systeem hebt aangesloten. U kunt als volgt een nieuw
+     printerstuurprogramma installeren en daarbij van een bestaand
+     printerobject gebruik maken:
+
+          1.  Plaats de muisaanwijzer op het printerobject.
+          2.  Druk op muisknop 2.
+          3.  Kies de optie Instellingen uit het voorgrondmenu.
+          4.  Kies de tab Stuurprogramma.
+          5.  Plaats de muisaanwijzer op een van de printerstuurprogramma's.
+          6.  Druk op muisknop 2.
+          7.  Kies de optie Installeren uit het voorgrondmenu.
+          8.  Selecteer het keuzerondje Niet geleverd met OS/2.
+          9.  Plaats de diskette met printerstuurprogramma's in station A.
+         11.  Kies de opdrachtknop Vernieuwen. In het venster worden vervolgens
+              de printerstuurprogramma's afgebeeld.
+         12.  Selecteer een of meer printerstuurprogramma's door de
+              muisaanwijzer op het gewenste stuurprogramma te plaatsen en
+              op muisknop 1 te drukken.
+         13.  Kies de opdrachtknop Installeren.
+
+     Het nieuwe printerstuurprogramma voor dit printerobject is nu
+     ge‹nstalleerd. Raadpleeg de onderwerpen "Een printerstuurprogramma
+     in een printerobject wijzigen", "De printergegevens van een
+     printerobject wijzigen" of "De afdrukgegevens in een printerobject
+     wijzigen" in dit Readme-bestand, als u de instellingen van het
+     nieuwe printerobject wilt wijzigen.
+
+
+
+Een printerstuurprogramma in een printerobject wijzigen
+-------------------------------------------------------
+
+Zodra het printerobject en het printerstuurprogramma zijn
+ge‹nstalleerd, moet u het juiste printerstuurprogramma selecteren voor
+het printerobject. Dit is wellicht ook noodzakelijk als u verschillende
+printerstuurprogramma's gebruikt voor hetzelfde printerobject.
+
+U kunt als volgt het printerstuurprogramma wijzigen:
+
+     1.  Plaats de muisaanwijzer op het printerobject.
+     2.  Druk op muisknop 2.
+     3.  Kies de optie Instellingen uit het voorgrondmenu.
+     4.  Kies de tab Stuurprogramma.
+     5.  Selecteer het printerstuurprogramma.
+     6.  Plaats de muisaanwijzer op het titelbalkpictogram.
+     7.  Druk tweemaal op muisknop 1.
+
+Het printerobject maakt nu gebruik van een ander printerstuurprogramma.
+Raadpleeg de onderwerpen "De printergegevens in een printerobject wijzigen"
+of "De afdrukgegevens in een printerobject wijzigen" in dit README-bestand,
+als u de instellingen van het nieuwe printerobject wilt wijzigen.
+
+De printergegevens in een printerobject wijzigen
+------------------------------------------------
+
+Bepaalde instellingen van een printerstuurprogramma worden "printergegevens"
+genoemd. De printergegevens beschrijven de fysieke configuratie van uw printer,
+zoals de hoeveelheid printergeheugen, de papiersoorten die voor de printer
+zijn gedefinieerd, lettertypecassettes, ge‹nstalleerde printerpatronen enz.
+U kunt de printergegevens als volgt opgeven:
+
+     1.  Plaats de muisaanwijzer op het printerobject.
+     2.  Druk op muisknop2.
+     3.  Kies de optie Instellingen uit het voorgrondmenu.
+     4.  Kies de tab Stuurprogramma.
+     5.  Plaats de muisaanwijzer op het printerstuurprogramma.
+     6.  Druk op muisknop 2.
+     7.  Kies de optie Instellingen uit het voorgrondmenu.
+     8.  Geef de gegevens op van uw printer.
+     9.  Plaats de muisaanwijzer op het titelbalkpictogram.
+    10.  Druk tweemaal op muisknop 1.
+
+Het printerobject is nu gereed voor het uitvoeren van afdruktaken.
+Raadpleeg het online boek Afdrukken in OS/2 in de map Bibliotheek
+voor meer informatie over het uitvoeren van afdruktaken.
+
+De afdrukgegevens in een printerobject
+--------------------------------------
+
+Bepaalde instellingen van een printerstuurprogramma worden "afdrukgegevens"
+genoemd. Via de afdrukgegevens kunt u opgeven hoe een afdruktaak moet worden
+uitgevoerd. U kunt in de meeste toepassingen een printerobject (soms ook wel
+afdrukwachtrij genoemd) kiezen en de gegevens van een afdruktaak wijzigen
+door de opdrachtknop Instellingen of Opties te kiezen. U kunt de
+afdrukgegevens echter ook de afdrukgegevens wijzigen van taken die buiten de
+toepassingen worden uitgevoerd, zoals voor het afdrukken door middel van slepen
+en neerzetten. Enkele voorbeelden van afdrukgegevens zijn: aantal exemplaren,
+resolutie, afdrukkwaliteit en afdrukstand (staand of liggend). U kunt als
+volgt, buiten de toepassingen om, de standaard afdrukgegevens van een
+printerobject wijzigen:
+
+     1.  Plaats de muisaanwijzer op het printerobject.
+     2.  Druk op muisknop 2.
+     3.  Kies de optie Instellingen uit het voorgrondmenu.
+     4.  Kies de opdrachtknop Afdrukgegevens.
+
+De standaard afdrukgegevens zijn nu opgegeven. Raadpleeg het online boek
+Afdrukken in OS/2 in de map Bibliotheek voor meer informatie over het
+uitvoeren van afdruktaken.
+

@@ -1,0 +1,230 @@
+­Bienvenido a Impresi¢n de OS/2!
+Este archivo describe la manera de instalar el controlador de
+dispositivo de la impresora. Una vez instalada la impresora en
+OS/2, en el escritorio se crea un objeto de impresora (el icono de la
+impresora). El objeto de la impresora representa una disposici¢n de
+configuraciones de hardware y de configuraciones de software que se
+utilizan al enviar "trabajos" de impresi¢n a la impresora. Si desea
+obtener m s informaci¢n sobre las impresoras y sobre el proceso de
+impresi¢n, consulte la Gu¡a de Aprendizaje de OS/2 y el manual en
+l¡nea "Printing in OS/2" que se encuentra en la carpeta de
+informaci¢n.
+
+Contenido
+---------
+
+     1. Instalaci¢n de una impresora en el OS/2
+     2. Cambio de un controlador de impresora en un objeto de impresora
+     3. Cambio de las propiedades de la impresora en un objeto de impresora
+     4. Cambio de las propiedades del trabajo en un objeto de impresora
+
+Instalaci¢n de una impresora en el OS/2
+---------------------------------------
+
+Los procedimientos para instalar una impresora var¡an en funci¢n de
+si durante la instalaci¢n del OS/2 se ha seleccionado o no una
+impresora. En el escritorio puede haber o no un objeto de impresora.
+De los dos procedimientos siguientes, elija el que mejor se adapte a
+sus necesidades.
+
+     En el escritorio no hay ning£n objeto de impresora
+     --------------------------------------------------
+
+     Siga estas pautas si el escritorio del OS/2 no contiene ning£n
+     objeto de impresora.
+
+     El sistema puede tener esta configuraci¢n si no se ha
+     seleccionado ninguna impresora durante la instalaci¢n del OS/2
+     o si se han suprimido todos los objetos de impresora del
+     escritorio. Para crear un objeto de impresora e instalar un
+     controlador de impresora, siga estos pasos:
+
+          1.  Abra la carpeta Modelos (que se encuentra en la carpeta del
+              sistema OS/2 una vez instalado).
+
+          2.  Sit£e el puntero en el modelo de la Impresora.
+
+          3.  Pulse el bot¢n 2 del rat¢n y no lo suelte.
+
+          4.  Arrastre el modelo al escritorio.
+
+          5.  Suelte el bot¢n 2 del rat¢n.
+
+          6.  Escriba un nombre para la impresora en el campo "Nombre".
+
+          7.  Seleccione una puerta donde conectar la impresora.
+
+          8.  Seleccione "Instalar nuevo controlador de impresora".
+              Aparecer  una ventana con una lista de controladores de
+              impresora que acompa¤an al OS/2.
+
+          9.  Seleccione "Otro controlador de impresora."
+
+         10.  Inserte en la unidad A el disquete que contiene los
+              controladores de impresora.
+
+         11.  Seleccione "Renovar".  Espere a que en la ventana
+              aparezcan los controladores de impresora.
+
+         12.  Seleccione uno o varios controladores pulsando el bot¢n
+              izquierdo del rat¢n en el controlador que desee.
+
+         13.  Seleccione "Instalar".
+
+     Hecho esto, en el escritorio del OS/2 aparecer  un nuevo objeto de
+     impresora. Si desea personalizar los valores de este nuevo objeto,
+     consulte los apartados de este archivo readme titulados "Cambio de
+     un controlador de impresora en un objeto de impresora", "Cambio de
+     las propiedades de la impresora" o "Cambio de las propiedades del
+     trabajo en un objeto de impresora".
+
+
+     En el escritorio hay un objeto de impresora
+     -------------------------------------------
+
+     Siga estas pautas si en el escritorio del OS/2 ya hay un objeto
+     de impresora pero el sistema no tiene el controlador de impresora
+     adecuado. Esto podr¡a suceder si el usuario a¤ade otra impresora
+     distinta al sistema. Para instalar un nuevo controlador de impresora
+     utilizando un objeto de impresora ya existente, siga estos pasos:
+
+          1.  Sit£e el puntero en el objeto de impresora.
+
+          2.  Pulse el bot¢n 2 del rat¢n.
+
+          3.  Seleccione "Valores".
+
+          4.  Seleccione la pesta¤a "Controlador de impresora".
+
+          5.  Sit£e el puntero en uno de los objetos de controlador
+              de impresora.
+
+          6.  Pulse el bot¢n 2 del rat¢n.
+
+          7.  Seleccione "Instalar".
+
+          8.  Seleccione "Otro controlador de impresora del OS/2".
+
+          9.  Inserte en la unidad A el disquete que contiene los controladores
+              de impresora.
+
+         10.  Seleccione "Renovar".  Espere a que en la ventana
+              aparezcan los controladores de impresora.
+
+         11.  Seleccione uno o varios controladores pulsando el bot¢n
+              izquierdo del rat¢n en el controlador que desee.
+
+         12.  Seleccione "Instalar".
+
+
+     Hecho esto, en este objeto de impresora ya quedar  instalado
+     un nuevo controlador de impresora.
+     Si desea personalizar los valores de este nuevo objeto,
+     consulte los apartados de este archivo readme titulados "Cambio de
+     un controlador de impresora en un objeto de impresora", "Cambio de
+     las propiedades de la impresora" o "Cambio de las propiedades del
+     trabajo en un objeto de impresora".
+
+
+     Nota: Si tiene instalado el antiguo controlador LaserJet de 16 bits
+           en el sistema, supr¡malo antes de instalar este controlador.
+
+
+Cambio de un controlador de impresora en un objeto de impresora
+---------------------------------------------------------------
+
+Una vez instalados el objeto de impresora y el controlador de impresora,
+en el objeto de impresi¢n deber¡a seleccionarse el controlador de impresora
+correcto. Esto tambi‚n puede resultar necesario si el usuario utiliza
+controladores de impresora distintos con un solo objeto de impresi¢n.
+Para cambiar un controlador de impresora por otro:
+
+     1.  Sit£e el puntero en el objeto de impresora.
+
+     2.  Pulse el bot¢n 2 del rat¢n.
+
+     3.  Seleccione "Valores".
+
+     4.  Seleccione la pesta¤a "Controlador de impresora".
+
+     5.  Seleccione el controlador de impresora.
+
+     6.  Sit£e el puntero en el icono de la barra del t¡tulo.
+
+     7.  Efect£e dos pulsaciones.
+
+Hecho esto, el objeto de impresora ya est  preparado para utilizar un
+controlador de impresora distinto. Si desea personalizar los valores de
+este nuevo controlador de impresora, consulte los apartados de este
+archivo readme titulados "Cambio de las propiedades de la impresora"
+o "Cambio de las propiedades de trabajo en un objeto de impresora".
+
+Cambio de las propiedades de la impresora en un objeto de impresora
+-------------------------------------------------------------------
+
+Los controladores de impresora tienen unos valores denominados "Propiedades
+de la impresora". Dichas propiedades describen la forma en que la
+impresora est  f¡sicamente instalada. Son propiedades de la
+impresora, por ejemplo, la cantidad de memoria de la impresora, los
+formularios asociados con las bandejas del papel de impresora, los
+cartuchos de fonts cargados en la impresora, los patrones de impresora
+instalados, etc. Para establecer las propiedades de la impresora:
+
+     1.  Sit£e el puntero en el objeto de impresora.
+
+     2.  Pulse el bot¢n 2 del rat¢n.
+
+     3.  Seleccione "Valores".
+
+     4.  Seleccione la pesta¤a "Controlador de impresora".
+
+     5.  Sit£e el puntero en el controlador de impresora.
+
+     6.  Pulse el bot¢n 2 del rat¢n.
+
+     7.  Seleccione "Valores".
+
+     8.  Cambie las propiedades para adaptarlas a la configuraci¢n de
+         la impresora.
+
+     9.  Sit£e el puntero en el icono de la barra del t¡tulo.
+
+    10.  Efect£e dos pulsaciones.
+
+Hecho esto, el objeto de impresora ya est  preparado para imprimir un
+trabajo. Si desea obtener informaci¢n sobre la manera de imprimir un
+trabajo, consulte el manual en l¡nea "Printing in OS/2" que se
+encuentra en la carpeta Informaci¢n.
+
+Cambio de las propiedades de objeto en un objeto de impresora
+-------------------------------------------------------------
+
+Los controladores de impresora tiene valores denominados "Propiedades
+del trabajo". Las propiedades del trabajo describen la forma en que
+se imprime un determinado trabajo de impresi¢n. Por lo general, las
+aplicaciones permiten seleccionar un objeto de impresora (en
+ocasiones denominado "cola de impresora") y cambiar las
+"Propiedades del trabajo" asociadas con un determinado trabajo
+pulsando los botones de configuraci¢n o de opciones. No obstante,
+en ocasiones es preciso cambiar las Propiedades del trabajo fuera de
+una aplicaci¢n (como la de impresi¢n con arrastrar y soltar).
+Son propiedades del trabajo, por ejemplo, el n£mero de copias, la
+resoluci¢n de impresi¢n, la calidad de impresi¢n, los efectos del
+color, la orientaci¢n (vertical o apaisada), etc. Si desea cambiar
+las Propiedades del trabajo asociadas con un objeto de impresora
+fuera de las aplicaciones, siga estos pasos:
+
+     1.  Sit£e el puntero en el objeto de impresora.
+
+     2.  Pulse el bot¢n 2 del rat¢n.
+
+     3.  Seleccione "Valores".
+
+     4.  Pulse dos veces el bot¢n "Propiedades del trabajo".
+
+Hecho esto, las propiedades del trabajo asociadas con un objeto de
+impresora ya est n configuradas. Si desea obtener m s informaci¢n
+sobre la manera de imprimir un trabajo, consulte el manual en l¡nea
+"Printing in OS/2" que se encuentra en la carpeta Informaci¢n.
+
+

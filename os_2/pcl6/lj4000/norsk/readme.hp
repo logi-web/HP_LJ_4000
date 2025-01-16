@@ -1,0 +1,162 @@
+Velkommen til utskrift i OS/2!
+Denne filen beskriver hvordan du installerer styreprogrammet for skriveren
+i OS/2. N†r du har installert en skriver i OS/2, blir det opprettet et
+skriverobjekt (skriverikon) i arbeidsomr†det. Skriverobjektet representerer
+konfigurasjonene av maskin- og programvaren som sammen brukes til † sende
+utskriftsjobber til skriveren. Du finner flere opplysninger om skrivere
+og utskrift, i oppl‘ringsprogrammet "Bli kjent med OS/2" og i boken
+"Utskrift i OS/2" i mappen "Informasjon".
+
+
+Innhold
+-------
+
+     1. Installere en skriver i OS/2
+     2. Endre skriverstyreprogram for et skriverobjekt
+     3. Endre skriverkjennetegn for et skriverobjekt
+     4. Endre jobbkjennetegn for et skriverobjekt
+
+
+Installere en skriver i OS/2
+----------------------------
+
+Det er flere m†ter † installere skrivere p†, avhengig av om du valgte
+en skriver under installeringen av OS/2. Hvis du valgte en skriver
+under installeringen, vil det finnes et skriverobjekt i arbeidsomr†det.
+Hvis du ikke valgte noen skriver, er det heller ikke noe skriverobjekt.
+Velg den av de to prosedyrene nedenfor som svarer til ditt oppsett.
+
+     Ingen skriverobjekter i arbeidsomr†det
+     --------------------------------------
+
+     Bruk denne fremgangm†ten hvis arbeidsomr†det i OS/2 ikke har noen
+     skriverobjekter. Installer en skriver og opprett et skriverobjekt
+     p† denne m†ten:
+
+          1. pne mappen Maler i arbeidsomr†det.
+          2. Plasser musepekeren p† malen Skriver.
+          3. Hold museknapp 2 nede.
+          4. Dra malen til arbeidsomr†det.
+          5. Slipp museknapp 2.
+          6. Oppgi et navn for skriveren i feltet "Navn".
+          7. Velg porten skriveren er koblet til.
+          8. Velg "Installer nytt styreprogram". En liste som inneholder
+             alle skriverstyreprogrammene som f›lger med OS/2, blir vist.
+          9. Velg "Annet OS/2-skriverstyreprogram".
+         10. Sett inn disketten som inneholder skriverstyreprogrammene,
+             i stasjon A.
+         11. Velg "Forny". Vent til listen over styreprogrammer er fornyet.
+         12. Velg ett eller flere styreprogrammer.
+         13. Velg "Installer".
+         14. N†r du kommer tilbake til vinduet "Opprette skriver", velger
+             du "Opprett".
+
+     Et nytt skriverobjekt blir opprettet i arbeidsomr†det i OS/2. Hvis du
+     vil endre innstillingene for skriverobjektet, leser du resten av denne
+     filen.
+
+     Det finnes ett eller flere skriverobjekter i arbeidsomr†det
+     -----------------------------------------------------------
+
+     Bruk denne fremgangm†ten hvis det allerede finnes et skriverobjekt
+     i arbeidsomr†det i OS/2, men det riktige styreprogrammet for skriveren
+     ikke er installert. Dette kan skje hvis du bytter skriver eller
+     kobler en ekstra skriver til maskinen. Installer ett nytt
+     styreprogram for skriver i et eksisterende skriverobjekt p† denne
+     m†ten:
+
+          1. Plasser musepekeren p† skriverobjektet.
+          2. Klikk med museknapp 2.
+          3. Velg "Innstillinger".
+          4. Velg flippen "Styreprogram".
+          5. Plasser musepekeren p† ett at styreprogramobjektene.
+          6. Klikk med museknapp 2.
+          7. Velg "Installere".
+          8. Velg "Annet OS/2-skriverstyreprogram".
+          9. Sett inn disketten som inneholder skriverstyreprogrammene,
+             i stasjon A.
+         10. Velg "Forny". Vent til listen over styreprogrammer er fornyet.
+         11. Velg ett eller flere styreprogrammer.
+         12. Velg "Installer".
+
+     Et nytt styreprogram for skriver er n† installert i skriverobjektet.
+     Hvis du vil endre innstillingene for skriverobjektet, leser du resten
+     av denne filen.
+
+     Merk: Hvis du har det gamle 16 bits LaserJet-styreprogrammet installert
+           p† systemet, m† du slette det f›r du installerer
+           dette styreprogrammet.
+
+Endre skriverstyreprogram for et skriverobjekt
+-------------------------------------------
+
+N†r b†de skriverobjektet og styreprogrammet for skriver er installert,
+m† riktig styreprogram velges for skriverobjektet. Dette kan v‘re
+n›dvendig hvis du bruker flere skriverstyreprogrammer for et
+skriverobjekt. F›lg denne fremgangsm†ten:
+
+     1. Plasser musepekeren p† skriverobjektet.
+     2. Klikk med museknapp 2.
+     3. Velg "Innstillinger".
+     4. Velg flippen "Styreprogram".
+     5. Velg det styreprogrammet som h›rer til skriveren.
+     6. Plasser musepekeren p† tittellinjeikonet (›verst til
+        venstre for navnet p† skriverobjektet).
+     7. Dobbeltklikk med musen for † lukke vinduet.
+
+Skriverobjektet vil n† bruke styreprogrammet du valgte. Hvis du vil endre
+innstillingene til skriverstyreprogrammet, leser du de to neste avsnittene.
+
+
+Endre skriverkjennetegn for et skriverobjekt
+---------------------------------------------------
+
+Skriverstyreprogrammer har innstillinger som kalles skriverkjennetegn.
+Skriverkjennetegnene beskriver skriverens fysiske oppsett. Eksempler p†
+skriverkjennetegn er mengden av minne i skriveren, papirformater som
+er definert for skriveren, formater tilknyttet papirskuffer, fontkassetter
+og installerte utskriftsm›nstre. Slik endrer du skriverkjennetegnene:
+
+     1. Plasser musepekeren p† skriverobjektet.
+     2. Klikk med museknapp 2.
+     3. Velg "Innstillinger".
+     4. Velg flippen "Styreprogram".
+     5. Plasser musepekeren p† styreprogramobjektet.
+     6. Klikk med museknapp 2.
+     7. Velg "Innstillinger".
+     8. Endre kjennetegnene slik at de stemmer med skriverens oppsett.
+     9. Plasser musepekeren p† tittellinjeikonet (›verst til
+        venstre for navnet p† skriverobjekt).
+    10. Dobbeltklikk med musen for † lukke vinduet.
+
+Skriveren er n† klar til † skrive ut en jobb. Hvis du trenger flere
+opplysninger om hvordan du skriver ut en jobb, ser du i boken
+"Utskrift i OS/2" som finnes p† systemet i mappen "Informasjon".
+
+
+Endre jobbkjennetegn for et skriverobjekt
+-----------------------------------------------
+
+Skriverstyreprogrammer har ogs† innstillinger som kalles jobbkjennetegn.
+Jobbkjennetegnene beskriver hvordan en bestemt utskriftsjobb skal skrives
+ut. De fleste programmer lar deg velge et skriverobjekt (kan ogs† bli
+kalt "skriverk›"), slik at du kan endre jobbkjennetegnene til en bestemt
+jobb. I tillegg kan du f† behov for † endre jobbkjennetegn uavhengig av
+programmer, for eksempel hvis du skriver ut ved † dra og slippe objekter
+p† skriverobjekter. Eksempler p† jobbkjennetegn er antall eksemplarer,
+oppl›sning, utskriftskvalitet, fargeeffekter og utskriftsretning (st†ende
+eller liggende). Du kan endre standard jobbkjennetegn for et skriverobjekt
+uten † bruke programmer, p† denne m†ten:
+
+     1. Plasser musepekeren p† skriverobjektet.
+     2. Klikk med museknapp 2.
+     3. Velg "Innstillinger".
+     4. Velg "Styreprogram".
+     4. Klikk p† "Jobbkjennetegn".
+
+Du kan n† endre jobbkjennetegnene som brukes som standardvalg for
+skriverobjektet. Hvis du trenger flere opplysninger om hvordan du
+skriver ut en jobb, ser du i boken "Utskrift i OS/2" som finnes p†
+systemet i mappen "Informasjon".
+
+

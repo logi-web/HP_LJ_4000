@@ -1,0 +1,175 @@
+Ce fichier d‚crit la proc‚dure d'installation d'un pilote
+d'imprimante sous OS/2. DŠs que vous installez une imprimante
+sous OS/2, un objet Imprimante (repr‚sent‚ par une ic“ne)
+apparaŒt sur le bureau. Cet objet renferme la configuration
+mat‚rielle et logicielle utilis‚e lorsque vous envoyez des
+travaux d'impression … l'imprimante. Pour plus de d‚tails
+sur les imprimantes et l'impression, reportez-vous au tutoriel
+"Utiliser OS/2" et au manuel en ligne "Impression sous OS/2",
+qui se trouve dans le dossier Informations.
+
+Sommaire
+--------
+
+     1. Installation d'une imprimante sous OS/2
+     2. Modification d'un pilote d'imprimante
+     3. Modification des Caract‚ristiques d'une imprimante
+     4. Modification des Caract‚ristiques d'un travail
+
+
+Installation d'une imprimante sous OS/2
+---------------------------------------
+
+La proc‚dure d'installation d'une imprimante varie selon que
+vous avez ou non install‚ un pilote lors de l'installation d'OS/2.
+Selon le cas, un objet Imprimante se trouve ou non d‚j… sur le bureau.
+Choisissez donc la proc‚dure d'installation adapt‚e … votre cas.
+
+     Le bureau ne contient pas d'objet Imprimante.
+     ---------------------------------------------
+
+     Vous ˆtes dans ce cas si vous n'avez pas s‚lect‚ d'imprimante
+     lors de l'installation d'OS/2 ou si les objets Imprimante ont
+     ‚t‚ supprim‚s. Pour cr‚er un objet Imprimante et installer un
+     pilote, proc‚dez comme suit :
+
+      1.Ouvrez le dossier ModŠles (situ‚ dans le dossier OS/2
+        dŠs qu'OS/2 est install‚).
+      2.Placez le pointeur sur le modŠle Imprimante.
+      3.Appuyez sur le bouton 2 de la souris et maintenez-le
+        enfonc‚.
+      4.Faites glisser le modŠle sur le bureau.
+      5.Relƒchez le bouton de la souris.
+      6.Tapez un nom dans la zone "Nom".
+      7.S‚lectez le port auquel est connect‚e l'imprimante.
+      8.S‚lectez "Installation d'un pilote d'imprimante".
+        Une fenˆtre apparaŒt, contenant la liste des pilotes
+        d'imprimante livr‚s avec OS/2.
+      9.S‚lectez "Autre pilote d'imprimante OS/2".
+     10.Ins‚rez la disquette contenant les pilotes dans l'unit‚ A.
+     11.S‚lectez "R‚g‚n‚ration". Attendez que les pilotes
+        d'imprimantes s'affichent dans la fenˆtre.
+     12.S‚lectez le(s) pilote(s) voulu(s) en cliquant …
+        l'aide du bouton 1 de la souris.
+     13.S‚lectez "Installation".
+
+     Un objet Imprimante apparaŒt sur le bureau. Si vous souhaitez
+     personnaliser ses paramŠtres, reportez-vous aux sections
+     "Modification d'un pilote d'imprimante", "Modification des
+     caract‚ristiques d'une imprimante" et "Modification des
+     caract‚ristiques d'un travail" dans ce fichier.
+
+     Le bureau contient d‚j… un objet Imprimante.
+     --------------------------------------------
+
+     Vous ˆtes dans ce cas si un objet Imprimante existe d‚j… mais
+     n'a pas le pilote ad‚quat, par exemple si vous avez install‚
+     une deuxiŠme imprimante. Pour installer un pilote destin‚ …
+     un objet Imprimante d‚j… existant, proc‚dez comme suit :
+
+      1.Cliquez sur l'objet Imprimante … l'aide du bouton 2
+        de la souris.
+      2.S‚lectez "ParamŠtres".
+      3.Ouvrez la page "Pilote d'imprimante".
+      4.Cliquez sur l'un des objets Pilote … l'aide du
+        bouton 2 de la souris.
+      5.S‚lectez "Installation".
+      6.S‚lectez "Autre pilote d'imprimante OS/2".
+      7.Ins‚rez la disquette contenant les pilotes dans
+        l'unit‚ A.
+      8.S‚lectez "R‚g‚n‚ration". Attendez que la liste des
+        pilotes apparaisse.
+      9.S‚lectez le(s) pilote(s) voulu(s) en cliquant …
+        l'aide du bouton 1 de la souris.
+     10.S‚lectez "Installation".
+
+     L'installation des nouveaux pilotes est termin‚e. Si vous
+     souhaitez personnaliser les paramŠtres de l'objet Imprimante,
+     reportez-vous aux sections "Modification d'un pilote d'imprimante",
+     "Modification des caract‚ristiques d'une imprimante" et
+     "Modification des caract‚ristiques d'un travail" dans ce fichier.
+
+     Remarque : Si l'ancien pilote LaserJet 16&rbl.bits est install‚,
+                supprimez-le avant d'installer le nouveau pilote.
+
+
+Modification d'un pilote d'imprimante
+-------------------------------------
+
+Une fois install‚s l'imprimante et son pilote, il vous faut s‚lecter le
+pilote ad‚quat dans l'objet Imprimante. Cette op‚ration peut ‚galement
+ˆtre n‚cessaire si vous utilisez plusieurs pilotes avec un seul objet
+Imprimante. Pour modifier le pilote, proc‚dez comme suit :
+
+     1.Cliquez sur l'objet Imprimante … l'aide du bouton 2
+       de la souris.
+     2.S‚lectez ParamŠtres.
+     3.Ouvrez la page "Pilote d'imprimante".
+     4.S‚lectez le pilote voulu.
+     5.Cliquez deux fois sur l'ic“ne de barre de titre.
+
+     L'objet Imprimante peut d‚sormais utiliser le pilote s‚lect‚.
+     Si vous souhaitez personnaliser les paramŠtres de ce pilote,
+     reportez-vous aux sections "Modification des caract‚ristiques
+     d'une imprimante" et "Modification des caract‚ristiques d'un
+     travail" dans ce fichier.
+
+
+Modification des caract‚ristiques d'une imprimante
+--------------------------------------------------
+
+Un pilote d'imprimante possŠde des paramŠtres qui d‚crivent
+la configuration physique de l'imprimante : il s'agit des
+"caract‚ristiques de l'imprimante". Elles concernent la
+capacit‚ m‚moire de l'imprimante, les formats de papier,
+le type d'alimentation, les cartouches de polices,
+les motifs d'impression, etc. Pour d‚finir les
+caract‚ristiques de l'imprimante, proc‚dez comme suit :
+
+     1.Cliquez sur l'objet Imprimante … l'aide du bouton 2
+       de la souris.
+     2.S‚lectez "ParamŠtres".
+     3.Ouvrez la page "Pilote d'imprimante".
+     4.Cliquez sur le pilote voulu … l'aide du bouton 2 de la souris.
+     5.S‚lectez "ParamŠtres".
+     6.Modifiez les caract‚ristiques de sorte qu'elles
+       correspondent … celles de l'imprimante.
+     7.Cliquez deux fois sur l'ic“ne de barre de titre.
+
+     L'objet Imprimante est configur‚. Vous pouvez lancer un travail
+     d'impression. Pour plus de d‚tails sur la proc‚dure … suivre,
+     reportez-vous au manuel en ligne "Impression sous OS/2",
+     qui se trouve dans le dossier Informations.
+
+
+Modifications des caract‚ristiques d'un travail
+-----------------------------------------------
+
+Un pilote d'imprimante possŠde des paramŠtres qui d‚terminent
+la fa‡on dont un travail sera imprim‚ : il s'agit des
+"caract‚ristiques d'un travail". Les applications permettent
+g‚n‚ralement de s‚lecter un objet Imprimante (parfois soumis
+… une file d'attente) et de modifier les caract‚ristiques
+associ‚es … un travail particulier en cliquant sur des boutons
+de configuration ou d'options. Cependant, il se peut que vous
+ayez … modifier les caract‚ristiques d'un travail hors d'une
+application mais lorsque vous manipulez l'objet sur le bureau.
+Ces caract‚ristiques sont le nombre d'exemplaires, la r‚solution
+et la qualit‚ d'impression, les couleurs, la pr‚sentation
+(… la fran‡aise ou … l'italienne), etc. Pour modifier les
+caract‚ristiques par d‚faut d'un travail en dehors d'une
+application, proc‚dez comme suit :
+
+     1.Cliquez sur l'objet Imprimante … l'aide du bouton 2
+       de la souris.
+     2.S‚lectez "ParamŠtres".
+     3.Ouvrez la page "Pilote d'imprimante".
+     4.S‚lectez "Caract. travail".
+
+La d‚finition des caract‚ristiques d'un travail associ‚es
+… un objet Imprimante est termin‚e. Pour plus de d‚tails
+sur l'impression, reportez-vous au manuel en ligne
+"Impression sous OS/2", qui se trouve dans le dossier
+Informations.
+
+

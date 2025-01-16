@@ -1,0 +1,157 @@
+Welcome to OS/2 Printing!
+This file describes how to install your OS/2 printer device driver.  After
+installing a printer in OS/2, a printer object (printer icon) is created on
+your desktop.  The printer object represents an arrangement of hardware
+configurations and software configurations which are used when sending print
+"jobs" to your printer.  For more information about printers and printing, see
+the Using OS/2 Tutorial and the online "Printing in OS/2" book located in the
+Information folder.
+
+Contents
+--------
+
+     1. Installing a printer in OS/2
+     2. Changing a printer driver in printer object
+     3. Changing the Printer Properties in a printer object
+     4. Changing the Job Properties in a printer object
+
+Installing a printer in OS/2
+----------------------------
+
+The procedures for installing a printer are different depending on whether or
+not you selected a printer during OS/2 installation.  Either a printer object
+does not exist on your desktop or a printer object does exist on your desktop.
+Choose from the following two procedures below that best describes your
+situation.
+
+     A printer object does not exist on your desktop
+     -----------------------------------------------
+
+     Use these directions if your OS/2 desktop does not have a printer object.
+     Your system can have this configuration if no printer was selected during
+     OS/2 installation or all the print objects have been deleted from the
+     desktop.  To create a printer object and install a printer driver follow
+     the steps below:
+
+          1.  Open the Templates Folder (located in OS/2 system folder after
+              OS/2 installation).
+          2.  Point to the Printer template.
+          3.  Press and hold mouse button 2.
+          4.  Drag the template to the desktop.
+          5.  Release mouse button 2.
+          6.  Type a name for a printer in the "Name" field.
+          7.  Select a port to which the printer is connected.
+          8.  Select "Install new printer driver."  A window appears with a list of
+                the printer drivers that are shipped with OS/2.
+          9.  Select "Other printer driver."
+         10.  Insert the diskette containing the printer drivers into drive A.
+         11.  Select "Refresh."  Wait until the window fills with printer drivers.
+         12.  Select one or more drivers by clicking on the left mouse button over
+                the desired driver.
+         13.  Select "Install."
+
+     A new printer object is now on your OS/2 Desktop.  If you want to customize
+     the settings for this new printer object, see the "Changing a printer
+     driver in printer object," "Changing the Printer Properties," or "Changing
+     the Job Properties in a printer object" sections in this readme file.
+
+     A printer object does exist on your desktop
+     -------------------------------------------
+
+     Use these directions if a printer object does exist on your OS/2 desktop,
+     but you do not have the correct printer driver on your system.  This could
+     happen if you add a different printer to you system.  To install a new
+     printer driver and use an existing printer object follow the steps below:
+
+          1.  Point to the printer object.
+          2.  Click mouse button 2.
+          3.  Select "Settings."
+          4.  Select the "Printer driver" tab.
+          5.  Point to one of the printer driver objects.
+          6.  Click mouse button 2.
+          7.  Select "Install."
+          8.  Select "Other OS/2 printer driver."
+          9.  Insert the diskette containing the printer drivers into drive A.
+         10.  Select "Refresh."  Wait until the window fills with printer drivers.
+         11.  Select one or more drivers by clicking on the left mouse button
+              over the desired driver.
+         12.  Select "Install."
+
+     A new printer driver is now installed in this printer object.  If you want
+     to customize the settings for this new printer object, see the "Changing a
+     printer driver in printer object," "Changing the Printer Properties," or
+     "Changing the Job Properties in a printer object" sections in this readme
+     file.
+
+     Note: If you have the old 16 bit LaserJet driver installed in your system,
+           delete it before you install this driver.
+
+Changing a printer driver in printer object
+-------------------------------------------
+
+Once both the printer object and the printer driver has been installed, the
+correct printer driver should be selected in the print object.  This might also
+be necessary if you use different printer drivers with a single print object.
+To change to a different printer driver:
+
+     1.  Point to the printer object.
+     2.  Click on mouse button 2.
+     3.  Select settings.
+     4.  Select the "Printer driver" tab.
+     5.  Select the printer driver.
+     6.  Point to the title-bar icon.
+     7.  Double-click.
+
+The printer object is now set up to use a different printer driver.  See If you
+want to customize the settings for this new printer driver, see the "Changing
+the Printer Properties," or "Changing the Job Properties in a printer object"
+sections in this readme file.
+
+Changing the Printer Properties in a printer object
+---------------------------------------------------
+
+A printer driver has settings called "Printer Properties."  Printer properties
+describe how your printer is physically set up.  Example of printer properties
+are the amount of memory in your printer, forms defined for your printer, forms
+associated with your printer paper trays, fonts cartridges loaded on your
+printer, installed printer patterns, etc.  To set the printer properties:
+
+     1.  Point to the printer object.
+     2.  Click the mouse button 2.
+     3.  Select "Settings."
+     4.  Select the "Printer driver" tab.
+     5.  Point to the printer driver.
+     6.  Click the mouse button 2.
+     7.  Select "Settings."
+     8.  Change the properties to match your printer setup.
+     9.  Point to the title-bar icon.
+    10.  Double-click.
+
+Your printer object is now set up to print a job.  For information about how to
+print a job, see the online "Printing in OS/2" book located in the Information
+folder.
+
+Changing the Job Properties in a printer object
+-----------------------------------------------
+
+A printer driver has settings called "Job Properties."  Job properties describe
+how a particular print job will be printed.  Applications will generally allow
+you to select a printer object (sometimes referred to a printer queue) and
+change the "Job Properties" associated with a particular job by clicking on
+setup or options buttons.  However, there are times you might want to change Job
+Properties outside of an application such as drag-n-drop printing.  Examples of
+job properties are number of copies, print resolution, print quality, color
+effects, orientation (portrait or landscape), etc.  The default Job Properties
+associated with a printer object can be changed outside applications by:
+
+     1.  Point to the printer object.
+     2.  Click the mouse button 2.
+     3.  Select "Settings."
+     4.  Double-click on the "Job Properties" button.
+
+The default job properties associated with a printer object are now set up.  For
+more information about how to print a job, see the online "Printing in OS/2"
+book located in the Information folder.
+
+
+

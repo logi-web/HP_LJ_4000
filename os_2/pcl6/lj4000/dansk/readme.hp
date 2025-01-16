@@ -1,0 +1,165 @@
+I denne fil forklares, hvordan du installerer OS/2-printerstyreprogrammer. N†r
+du har installeret en printer under OS/2, oprettes et printerobjekt (en
+printerikon) p† arbejdspladsen. Printerobjektet repr‘senterer den kombination
+af hardware- og software-konfigurationer, som systemet bruger, n†r der sendes
+udskrivningsjob til printeren. Der er flere oplysninger om printere og
+udskrivning i ›veprogrammet Introduktion til OS/2 og i online-bogen Udskrivning
+under OS/2, som er placeret i folderen Online-b›ger.
+
+Indhold
+-------
+
+     1. Printerinstallation under OS/2
+     2. Skift af printerobjektets printerstyrerprogram
+     3. ’ndring af printerobjektets printeregenskaber
+     4. ’ndring af printerobjektets udskriftsegenskaber
+
+Printerinstallation under OS/2
+------------------------------
+
+Der er forskellige fremgangsm†der for installation af en printer, afh‘ngigt
+af, om du har valgt en printer under installationen af OS/2. Hvis du har
+valgt en printer, er der et printerobjekt p† arbejdspladsen - hvis ikke, er
+der ikke noget printerobjekt. V‘lg den ene af nedenst†ende fremgangsm†der, der
+passer til din situation.
+
+     Der findes ikke noget printerobjekt p† arbejdspladsen
+     -----------------------------------------------------
+
+     Hvis der ikke er noget printerobjekt p† arbejdspladsen, skal du f›lge
+     disse anvisninger. Systemet kan v‘re konfigureret p† denne m†de, hvis
+     der enten ikke er valgt nogen printer under installationen af OS/2, eller
+     hvis alle printerobjekterne er blevet slettet fra arbejdspladsen. G›r
+     f›lgende for at oprette et printerobjekt og installere et
+     printerstyreprogram:
+
+          1.  bn folderen Skabeloner, som efter installationen af OS/2 er
+              placeret i folderen OS/2 System.
+          2.  Peg p† printerskabelonen.
+          3.  Tryk p† museknap 2, og hold den nede.
+          4.  Tr‘k skabelonen ud p† arbejdspladsen.
+          5.  Slip museknap 2.
+          6.  Skriv et navn p† printeren i feltet Navn.
+          7.  Mark‚r den port, som printeren er tilsluttet.
+          8.  V‘lg Install‚r nyt printerstyreprogram. Der vises et vindue med
+                en liste over de printerstyreprogrammer, der leveres sammen
+                med OS/2.
+          9.  V‘lg Andet OS/2-printerstyreprogram.
+         10.  S‘t disketten med printerstyreprogrammer i drev A.
+         11.  V‘lg Opfrisk. Vent, til alle printerstyreprogrammerne vises i
+                vinduet.
+         12.  Mark‚r ‚t eller flere printerstyreprogrammer ved at klikke med
+                den venstre museknap p† det printerstyreprogram, du vil v‘lge.
+         13.  V‘lg Install‚r.
+
+     Der er nu et nyt printerobjekt p† OS/2 Arbejdsplads. Hvis du vil tilpasse
+     det nye printerobjekts indstillinger, kan du finde vejledning i f›lgende
+     afsnit af denne README-fil: Skift af printerobjektets printerstyrerprogram,
+     ’ndring af printerobjektets printeregenskaber og ’ndring af printerobjektets
+     udskriftsegenskaber.
+
+     Der findes et printerobjekt p† arbejdspladsen
+     ---------------------------------------------
+
+     Du skal f›lge disse anvisninger, hvis der er et printerobjekt p†
+     arbejdspladsen, men du ikke har det korrekte printerstyreprogram
+     installeret p† systemet. Det kan ske, hvis slutter en anden printer til
+     systemet. G›r f›lgende for at installere et nyt printerstyreprogram og
+     bruge det eksisterende printerobjekt:
+
+          1.  Peg p† printerobjektet.
+          2.  Klik med museknap 2.
+          3.  V‘lg Indstillinger.
+          4.  V‘lg skillebladet Printerstyreprogrammer.
+          5.  Peg p† et af printerstyreprogramobjekterne.
+          6.  Klik med museknap 2.
+          7.  V‘lg Install‚r.
+          8.  V‘lg Andet OS/2 printerstyreprogram.
+          9.  S‘t disketten med printerstyreprogrammer i drev A.
+         10.  V‘lg Opfrisk. Vent, til alle printerstyreprogrammerne vises i
+                vinduet.
+         11.  Mark‚r ‚t eller flere printerstyreprogrammer ved at klikke med
+                den venstre museknap p† det printerstyreprogram, du vil v‘lge.
+         12.  V‘lg Install‚r.
+
+     Der er nu installeret et nyt printerstyreprogram til dette printerobjekt.
+     Hvis du vil tilpasse det nye printerobjekts indstillinger, kan du finde
+     vejledning i f›lgende afsnit af denne README-fil: Skift af printerobjektets
+     printerstyrerprogram, ’ndring af printerobjektets printeregenskaber og
+     ’ndring af printerobjektets udskriftsegenskaber.
+
+     Bem‘rk: Hvis 16-bit-versionen af LaserJet-styreprogrammet er installeret
+             p† systemet, skal du slette den, inden du installerer denne
+             version.
+
+
+Skift af printerobjektets printerstyrerprogram
+----------------------------------------------
+
+N†r b†de printerobjektet og printerstyreprogrammet er installeret, skal det
+korrekte printerstyreprogram markeres under printerobjektet. Det kan ogs† v‘re
+n›dvendigt at g›re, hvis du bruger forskellige printerstyreprogrammer sammen
+med et enkelt printerobjekt. G›r f›lgende for at skifte til et andet
+printerstyreprogram:
+
+     1.  Peg p† printerobjektet.
+     2.  Klik med museknap 2.
+     3.  V‘lg Indstillinger.
+     4.  V‘lg skillebladet Printerstyreprogram.
+     5.  Mark‚r et printerstyreprogram.
+     6.  Peg p† ikonen i overskriftslinien.
+     7.  Dobbeltklik.
+
+Printerobjektet er nu indstillet til at bruge et andet printerstyreprogram.
+Hvis du vil tilpasse indstillingerne for det nye printerstyreprogram, kan
+du finde vejledning i f›lgende afsnit af denne README-fil: ’ndring af
+printerobjektets printeregenskaber og ’ndring af printerobjektets
+udskriftsegenskaber.
+
+’ndring af printerobjektets printeregenskaber
+---------------------------------------------
+
+Til et printerstyreprogram h›rer s†kaldte printeregenskaber, som beskriver
+printerens fysiske ops‘tning. Printeregenskaber kan f.eks. v‘re st›rrelsen p†
+printerens interne lager, definerede printerpapirformater, papirbakkeformater
+monterede fontkassetter, installerede printerm›nstre osv. G›r f›lgende for
+at indstille printeregenskaber:
+
+     1.  Peg p† printerobjektet.
+     2.  Klik med museknap 2.
+     3.  V‘lg Indstillinger.
+     4.  V‘lg skillebladet Printerstyreprogram.
+     5.  Peg p† printerstyreprogrammet.
+     6.  Klik med museknap 2.
+     7.  V‘lg Indstillinger.
+     8.  Ret indstillingerne, s† de svarer til printerkonfigurationen.
+     9.  Peg p† ikonen i overskriftslinien.
+    10.  Dobbeltklik.
+
+Printerobjektet er nu defineret til udskrivning af et udskrivningsjob. Der er
+flere oplysninger i online-bogen Udskrivning under OS/2, som er placeret i
+folderen Online-b›ger.
+
+’ndring af printerobjektets udskriftsegenskaber
+-----------------------------------------------
+
+Til et printerstyreprogram h›rer s†kaldte udskriftsegenskaber, som forklarer,
+hvordan et bestemt job skrives ud. Inde fra de forskellige programmer kan
+du ofte v‘lge et printerobjekt, ogs† kaldet printerk›, og ‘ndre de
+udskriftsegenskaber, der er knyttet til et bestemt job, ved at klikke p†
+konfigurations- eller valgknapper. Men det kan forekomme, at du vil ‘ndre
+udskriftsegenskaberne uden for programmet, f.eks. udskrivning vha.
+tr‘k-og-plac‚r. Udskriftsegenskaber kan f.eks. v‘re antal eksemplarer,
+udskriftens opl›sning og kvalitet, farveeffekter, papirretning (h›j- eller
+tv‘rformat) osv. Uden for programmet kan du ‘ndre de standardudskriftsegenskaber,
+der er knyttet til et printerobjekt, ved at g›re f›lgende:
+
+     1.  Peg p† printerobjektet.
+     2.  Klik med museknap 2.
+     3.  V‘lg Indstillinger.
+     4.  Dobbeltklik p† trykknappen Udskriftsegenskaber.
+
+Der er nu defineret standarudskriftsegenskaber, der er knyttet til
+printerobjektet. Der er flere oplysninger i online-bogen Udskrivning
+under OS/2, der er placeret i folderen Online-b›ger.
+

@@ -1,0 +1,124 @@
+;
+; Hewlett Packard printer INF for NT 4.0.
+; 
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%HP%
+LayoutFile=hplayout.inf
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+
+;
+; Manufacturer Sections
+;
+; This section lists all of the manufacturers that we will
+; display in the Dialog box.
+;
+[Manufacturer]
+"HP"
+
+;
+; Model Sections 
+;
+; These sections correspond with an entry listed in the
+; [Manufacturer] section above. The models will be displayed in the order
+; that they appear here.
+;
+[HP]
+"HP LaserJet 4000 Series PCL 6"     = HPXLNT.DLL.BIDI
+"HP LaserJet 4000 PCL 5e"           = HPBPCLA.DLL.BIDI
+"HP LaserJet 4000 Series PS"        = HP4000_6.PPD
+
+;
+; Installer Sections
+;
+; These sections control file installation, and reference all files that
+; need to be copied. The section name will be assumed to be the driver data
+; file, unless there is an explicit DataFile section listed.
+;
+
+[HPBPCLA.DLL.BIDI]
+CopyFiles=HPBPCLA
+DataSection=HPRASDD_DATA
+DataFile=HPBPCLA.DLL
+LanguageMonitor=%HPDC_MONITOR%
+
+[HPXLNT.DLL.BIDI]
+CopyFiles=HPXLNT
+DataSection=HPXLNT_DATA
+DataFile=HPBXLK6.DLL
+LanguageMonitor=%HPDC_MONITOR%
+
+[HP4000_6.PPD]
+CopyFiles=@HP4000_6.PPD,PSCRIPT
+DataSection=PSCRIPT_DATA
+LanguageMonitor=%HPDC_MONITOR%
+
+; Copy Sections
+;
+; Lists of files that are actually copied. These sections are referenced
+; from the installer sections above. Only create a section if it contains
+; two or more files (if we only copy a single file, identify it in the
+; installer section, using the @filename notation) or if it's a color
+; profile (since the DestinationDirs can only handle sections, and not
+; individual files).
+;
+[HPBPCLA]
+HPDCMON.DLL
+HPRASDUI.DLL,HPRASDUI.DL_
+HPRASDUI.HLP,HPRASDUI.HL_
+HPBPCLA.DLL,HPBPCLA.DL_
+HPBPCLA1.DLL,HPBPCLA1.DL_
+HPBPCLA.HLP,HPBPCLA.HL_
+HPRASDD.DLL,HPRASDD.DL_
+
+[HPXLNT]
+HPDCMON.DLL
+HPBXLK7.HLP,HPBXLK7.HL_
+HPBXLK5.DLL,HPBXLK5.DL_
+HPBXLK4.DLL,HPBXLK4.DL_
+HPBXLK6.DLL,HPBXLK6.DL_
+HPBXLK7.DLL,HPBXLK7.DL_
+
+[PSCRIPT]        
+PSCRIPT.DLL,PSCRIPT.DL_
+PSCRPTUI.DLL,PSCRPTUI.DL_
+PSCRIPT.HLP,PSCRIPT.HL_
+HPDCMON.DLL
+PSCRIPT.SEP
+
+
+;
+; Data Sections
+;
+; These sections contain data that is shared between devices.
+;
+[HPRASDD_DATA]
+DriverFile=HPRASDD.DLL
+ConfigFile=HPRASDUI.DLL
+HelpFile=HPRASDUI.HLP
+
+[HPXLNT_DATA]
+DriverFile=HPBXLK4.DLL
+ConfigFile=HPBXLK5.DLL
+HelpFile=HPBXLK7.HLP
+
+[PSCRIPT_DATA]
+DriverFile=PSCRIPT.DLL
+ConfigFile=PSCRPTUI.DLL
+HelpFile=PSCRIPT.HLP
+;
+; Call SetupSetDirectoryId with 66000 to set the target directory at runtime
+; (depending on which environment drivers are getting installed)
+;
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+
+[Strings]
+HP="Hewlett-Packard"
+HPDC_MONITOR="HP LaserJet 5 Language Monitor,HPDCMON.DLL"
+

@@ -1,0 +1,43 @@
+; HP LaserJet 4000 driver installation file for Windows
+; Copyright Hewlett-Packard 1997
+;
+; /* --------------------------------------------------------------- *\
+;  | Files for HP LaserJet 4000 PCL6
+;  | HPBXLB.DRV   = HP LaserJet 4000 PCL 6
+;  | HPBXLB.HLP   = Help file for the HP LaserJets
+;  | HPBXLB1.DLL  = DLL for graphics
+;  | HPBXLB2.DLL  = DLL for UI
+;  | HPBXLB3.DLL  = DLL for text
+;  | HPTABS16.DLL = COLA tabs
+; \* --------------------------------------------------------------- */
+; /* --------------------------------------------------------------- *\
+;  |
+;  | HPBPCLA.drv  = HP LaserJet PCL5e 1997 Printer Drivers
+;  | HPBPCLA.hlp  = Help file for HP LaserJet Driver
+;  | HPBPCLA1.dll = DLL for HPGL2 graphics
+;  | HPBPCLA2.dll = DLL for raster graphics
+;  | HPBPCLA3.dll = DLL for text
+;  | HPBPCLA4.dll = DLL for building PCLETTO's
+;  | HPBPCLA5.dll = DLL for UI
+;  | HPBPCLA6.dll = Font Installer for HP LaserJet Printer Drivers
+;  | HPBPCLA6.hlp = Help file for Font Installer for HP LaserJet 
+;  |                Printer Drivers
+;  | hptabs16.dll = DLL for property sheets
+;  | 
+; \* --------------------------------------------------------------- */
+[disks]
+     1 =. ,"HP LaserJet 4000 Disk 1"
+     2 =. ,"HP LaserJet 4000 Disk 2"
+     3 =. ,"HP LaserJet 4000 Disk 3"
+
+[io.device]
+     1:PSCRIPT.DRV,"HP LaserJet 4000 Series PS 300","DEVICESPECIFIC"
+     1:PSCRIPT.DRV,"HP LaserJet 4000 Series PS 600","DEVICESPECIFIC"
+     1:PSCRIPT.DRV,"HP LaserJet 4000 Series PS 1200","DEVICESPECIFIC"
+     2:HPBPCLA.DRV,"HP LaserJet 4000 Series PCL 5e","DEVICESPECIFIC"
+     3:HPBXLB.DRV,"HP LaserJet 4000 Series PCL 6","DEVICESPECIFIC"
+
+[io.dependent]
+HPBXLB.DRV=2:HPTABS16.DLL,HPBXLB1.DLL,HPBXLB2.DLL,HPBXLB3.DLL,HPBXLB.HLP
+HPBPCLA.DRV= HPBPCLA.HLP,HPBPCLA1.DLL,HPBPCLA2.DLL,HPBPCLA3.DLL,HPBPCLA4.DLL,HPBPCLA5.DLL,HPBPCLA6.DLL,HPBPCLA6.HLP,HPTABS16.DLL
+PSCRIPT.DRV=PSCRIPT.HLP,HP4000_3.WPD,HP4000_6.WPD,HP400012.WPD

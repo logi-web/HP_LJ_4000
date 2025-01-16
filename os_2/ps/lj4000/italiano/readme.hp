@@ -1,0 +1,163 @@
+Benvenuti nella funzione di stampa di OS/2
+Questo programma descrive in che modo installare il programma di controllo interno
+della stampante OS/2. Dopo aver installato una stampante in OS/2, sulla Scrivania appare
+viene creato un oggetto stampante (icona). L'icona della stampante rappresenta la disposizione delle
+configurazioni hardware e software che vengono utilizzate nell'inviare la stampa di un
+"lavoro" alla stampante. Per ulteriori informazioni sulle stampanti e sulla stampa,
+consultare Uso del supporto didattico dell'OS/2 e il manuale in linea "Stampa in OS/2"
+che si trovano nella cartella Informazioni.
+
+Contenuto
+---------
+
+     1. Installazione di una stampante in OS/2
+     2. Modifica del Programma di una stampante in icona
+     3. Modifica delle Caratteristiche di stampante in icona
+     4. Modifica delle Caratteristiche di lavoro in icona
+
+Installazione di una stampante in OS/2
+--------------------------------------
+
+Le procedure per l'installazione di una stampante si differenziano a seconda che,
+durante l'installazione dell'OS/2, si sia selezionata una stampante o meno.  Di
+conseguenza, l'icona della stampante potr… apparire o meno sulla Scrivania.
+Scegliere, tra le seguenti due procedure, quella pi— adatta alla propria situazione.
+
+     Sulla Scrivania, l'icona della stampante non esiste
+     ---------------------------------------------------
+
+     Se, sulla propria Scrivania OS/2, non appare un oggetto stampante, avvalersi
+     di queste indicazioni.
+     Il sistema pu• avere questa configurazione nel caso non sia stata selezionata
+     alcuna stampante durante l'installazione di OS/2 oppure, dalla Scrivania, siano
+     stati cancellati tutti gli oggetti stampante.
+     Per creare un oggetto stampante e installare un programma di
+     stampante, procedere come segue:
+
+          1.  Aprire la cartella Maschera (che, dopo l'installazione dell'OS/2,
+              si trova nella cartella di sistema OS/2).
+          2.  Puntare sulla cartella Maschera.
+          3.  Premere e tenere premuto il tastino 2 del mouse.
+          4.  Trascinare la maschera verso la Scrivania.
+          5.  Rilasciare il tastino 2 del mouse.
+          6.  Digitare un nome per la stampante nel campo "Nome".
+          7.  Selezionare la porta alla quale Š collegata la stampante.
+          8.  Selezionare "Installare nuovo programma stampante". Appare una
+              finestra con un elenco di programmi stampante forniti dall'OS/2.
+          9.  Selezionare "Altri programmi stampante".
+         10.  Inserire nell'unit… A il minidisco contenente i programmi stampante.
+         11.  Selezionare "Aggiornare". Attendere che nella finestra vengano
+              visualizzati i programmi stampante.
+         12.  Selezionare uno o pi— programmi stampante facendo clic con il tastino 1
+              del mouse sul programma desiderato.
+         13.  Selezionare "Installare".
+
+     Ora, sulla Scrivania OS/2, Š apparso un nuovo oggetto stampante.  Se si desidera
+     personalizzare le impostazioni di questa nuova icona, consultare le sezioni "Modifica
+     programma stampante in icona", "Modifica le Caratteristiche di stampante",
+     o "Modifica le Caratteristiche di lavoro in icona" di questo file Readme.
+
+     Sulla Scrivania esiste un'icona stampante
+     -----------------------------------------
+
+     Se, sulla Scrivania OS/2, esiste un'icona stampante ma, nel sistema, non si ha il
+     programma di stampante corretto, procedere come segue. Ci• pu• accadere
+     quando si inserisce nel sistema una stampante diversa. Per installare un nuovo
+     programma stampante ed utilizzare un'icona di stampante esistente:
+
+          1.  Puntare sull'icona di stampante.
+          2.  Fare clic con il tastino 2 del mouse.
+          3.  Selezionare "Impostazioni".
+          4.  Selezionare il separatore "Programma stampante".
+          5.  Puntare su una delle icone dei programmi di stampante.
+          6.  Fare clic sul tastino 2 del mouse.
+          7.  Selezionare "Installare".
+          8.  Selezionare "Altri programmi stampante OS/2".
+          9.  Inserire nell'unit… A il minidisco contenente i programmi di stampante.
+         10.  Selezionare "Aggiornare". Aspettare fin quando sulla finestra appaiono
+              i programmi di stampante.
+         11.  Selezionare uno o pi— programmi facendo clic con il tastino 1 del mouse
+              sul programma desiderato.
+         12.  Selezionare "Installare".
+
+     Ora, in questa icona di stampante, Š stato installato un nuovo programma di stampante.
+     Se si vogliono personalizzare le impostazioni di questa nuova icona di stampante, consultare
+     le sezioni "Modifica il programma stampante in icona," "Modifica le
+     Caratteristiche di stampante" o "Modifica le Caratteristiche di lavoro in icona"
+     di questo file Readme.
+
+     Nota: Se sul sistema Š installato il vecchio programma di controllo
+           LaserJet a 16 bit, cancellarlo prima di installare il nuovo.
+
+
+Modifica di un programma stampante in icona
+-------------------------------------------------
+
+Dopo aver installato sia l'icona che il programma di stampante,
+si deve selezionare, nell'icona, il programma di stampante appropriato.
+Ci• pu• rendersi necessario se si usano differenti programmi stampante con un'unica icona.
+Per passare ad un differente programma stampante:
+
+     1.  Puntare sull'icona di stampante.
+     2.  Fare clic sul tastino 2 del mouse.
+     3.  Selezionare "Impostazioni".
+     4.  Selezionare il separatore "Programma stampante".
+     5.  Selezionare il programma stampante.
+     6.  Puntare sull'icona barra del titolo.
+     7.  Fare doppio clic.
+
+Ora l'icona di stampante Š impostata per utilizzare un diverso programma di stampante.
+Se si vuole personalizzare l'impostazione di questo nuovo programma stampante, consultare le sezioni
+"Modifica Caratteristiche stampante" o "Modifica le Caratteristiche di lavoro in icona"
+di questo file Readme.
+
+Modifica delle caratteristiche della stampante in un'icona
+----------------------------------------------
+
+Un programma stampante presenta delle impostazioni chiamate "Caratteristiche stampante"
+Le Caratteristiche stampante descrivono il modo in cui la stampante Š fisicamente impostata.
+Esempi delle Caratteristiche di stampante sono la quantit… di memoria della stampante,
+i moduli definiti per la stampante, i moduli associati con i vassoi della carta,
+le cartucce di font caricate nella stampante, i retini di stampante installati, ecc.
+Per impostare le caratteristiche della stampante:
+
+     1.  Puntare sull'icona stampante.
+     2.  Fare clic con il tastino 2 del mouse.
+     3.  Selezionare "Impostazioni".
+     4.  Selezionare il separatore "Programma stampante".
+     5.  Puntare sul programma stampante.
+     6.  Fare clic con il tastino 2 del mouse.
+     7.  Selezionare "Impostazioni".
+     8.  Modificare le caratteristiche affinchŠ corrispondano all'impostazione della stampante.
+     9.  Puntare sull'icona barra del titolo.
+    10.  Fare doppio clic.
+
+L'icona di stampante ora Š pronta a stampare un lavoro. Per informazioni sul modo in cui
+stampare un lavoro, consultare il manuale in linea "Stampa in OS/2" che si trova nella
+cartella Informazioni.
+
+Modifica delle caratteristiche del lavoro in icona
+----------------------------------------------
+
+Un programma stampante dispone di impostazioni chiamate "Caratteristiche del lavoro".
+Le caratteristiche del lavoro descrivono il modo in cui dovr… essere stampato un particolare lavoro.
+In genere, le applicazioni permetteranno di selezionare un'icona di stampante
+(che talvolta si riferisce ad una coda di stampante) e di modificare le
+"Caratteristiche di lavoro", associate ad un particolare lavoro, facendo clic
+sul pulsante dell'impostazione oppure su quello delle opzioni.  Tuttavia, esistono circostanze nelle
+quali si possono voler modificare le Caratteristiche di lavoro al di fuori di
+un'applicazione quale la stampa con trascinamento e rilascio.  Esempi delle
+Caratteristiche di lavoro sono il numero delle copie, la risoluzione di stampa, la qualit… di stampa,
+gli effetti di colore, l'orientamento (verticale oppure orizzontale), ecc.  Per modificare i valori assunti delle
+Caratteristiche di lavoro associati ad un'icona di stampante al di fuori di un'applicazione:
+
+     1.  Puntare sull'icona di stampante.
+     2.  Fare clic sul tastino 2 del mouse.
+     3.  Selezionare "Impostazioni."
+     4.  Fare doppio clic sul pulsante "Caratteristiche di lavoro".
+
+Ora, i valori assunti delle caratteristiche di lavoro asociati ad un'icona sono impostati.
+Per ulteriori informazioni sul modo in cui stampare un lavoro, consultare
+il manuale in linea "Stampare in OS/2" che si trova nella cartella Informazioni.
+
+
